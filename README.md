@@ -16,18 +16,6 @@ Author One\* · Author Two\* · Author Three · Author Four · Author Five
 
 Institution Placeholder · \*Equal contribution
 
-## Project page
-
-Comparisons, the VComBench table, and citation live in [`docs/`](docs/index.html).
-
-To publish with GitHub Pages, set the source to the `docs` folder on the default branch.
-
-```bash
-python3 -m http.server 8765 --directory docs
-```
-
-Paper and the public leaderboard are not in this release yet.
-
 ## Method
 
 NeurCo treats a frozen video model as a backend whose instruction set is not known in advance. It measures that backend once, then compiles each request against the measurement.
