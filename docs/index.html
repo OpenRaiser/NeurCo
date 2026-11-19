@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeurCo | Neural Rendering Compiler</title>
+  <script>
+    try {
+      if (localStorage.getItem("neurco-theme") === "light") {
+        document.documentElement.dataset.theme = "light";
+      }
+    } catch (e) {}
+  </script>
+  <meta name="description" content="Neural Rendering Compiler (NeurCo): capability profiling and compilation for programmable generative video rendering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050505;
+      --bg-elev: #0e0e0e;
+      --line: #222;
+      --text: #ececec;
+      --muted: #9a9a9a;
+      --accent: #2b7fff;
+      --accent-hot: #5aa1ff;
+      --accent-dim: rgba(43, 127, 255, 0.16);
+      --card: #121212;
+      --max: 1120px;
+      --topbar: rgba(5, 5, 5, 0.88);
+      --hover-line: #444;
+      --hover-line-strong: #555;
+      --abstract-bg: linear-gradient(180deg, #101010, #0a0a0a);
+      --abstract-text: #cfcfcf;
+      --soft-fg: #cfcfcf;
+      --soft-bg: #1b1b1b;
+      --score: #b9d4ff;
+      --table-head: #0c0c0c;
+      --table-hover: #161616;
+      --table-group: #0a0a0a;
+      --hi: #c5d8ff;
+      --sub: #fff;
+      --cite-bg: #0b0b0b;
+      --cite-fg: #d7d7d7;
+    }
+    html[data-theme="light"] {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --bg-elev: #ffffff;
+      --line: #d5deea;
+      --text: #162033;
+      --muted: #5b6b80;
+      --accent: #1f6fe5;
+      --accent-hot: #1558c0;
+      --accent-dim: rgba(31, 111, 229, 0.12);
+      --card: #ffffff;
+      --topbar: rgba(244, 247, 251, 0.92);
+      --hover-line: #b7c5d8;
+      --hover-line-strong: #8ea0b8;
+      --abstract-bg: linear-gradient(180deg, #ffffff, #f3f6fb);
+      --abstract-text: #243044;
+      --soft-fg: #3c4c63;
+      --soft-bg: #e7eef8;
+      --score: #1558c0;
+      --table-head: #eef3f9;
+      --table-hover: #f3f7fc;
+      --table-group: #e7f1fb;
+      --hi: #1558c0;
+      --sub: #162033;
+      --cite-bg: #f7f9fc;
+      --cite-fg: #243044;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-hot); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 2.5rem)); margin: 0 auto; }
+    .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 30;
+      backdrop-filter: blur(12px);
+      background: var(--topbar);
+      border-bottom: 1px solid transparent;
+    }
+    .topbar.is-scrolled { border-bottom-color: var(--line); }
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 3.5rem;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      color: var(--text); font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; font-size: 0.92rem;
+    }
+    .brand:hover { text-decoration: none; }
+    .dot {
+      width: 0.55rem; height: 0.55rem; border-radius: 50%;
+      background: var(--accent); box-shadow: 0 0 14px rgba(43,127,255,0.65);
+    }
+    .nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .nav a {
+      color: var(--muted); font-size: 0.86rem; font-weight: 500;
+      padding: 0.35rem 0.7rem; border: 1px solid var(--line); border-radius: 999px;
+    }
+    .nav a:hover { color: var(--text); border-color: var(--hover-line); text-decoration: none; }
+    .nav a.primary {
+      color: #fff; background: var(--accent); border-color: var(--accent); font-weight: 600;
+    }
+
+    .hero { padding: 4.5rem 0 2.5rem; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      color: var(--accent-hot); font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.1rem;
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.85rem, 4.4vw, 3rem);
+      line-height: 1.12; font-weight: 700; letter-spacing: -0.02em;
+      max-width: 18ch;
+    }
+    .lede {
+      margin: 0 0 1.6rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      max-width: 52rem;
+    }
+    .authors {
+      display: flex; flex-wrap: wrap; gap: 0.35rem 0.85rem;
+      margin: 0 0 0.55rem; padding: 0; list-style: none;
+      color: var(--text); font-size: 0.95rem;
+    }
+    .affil { color: var(--muted); font-size: 0.88rem; margin-bottom: 1.5rem; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.55rem 0.95rem; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--text);
+      font-size: 0.9rem; font-weight: 600; background: transparent; cursor: pointer;
+    }
+    .btn:hover { text-decoration: none; border-color: var(--hover-line-strong); }
+    .theme-toggle {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .theme-toggle:hover { border-color: var(--hover-line-strong); }
+    .topbar-actions { display: flex; align-items: center; gap: 0.55rem; }
+    .btn.solid { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn.ghost { background: transparent; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem 1.05rem;
+    }
+    .stat b {
+      display: block; font-size: 1.35rem; font-weight: 700;
+      letter-spacing: -0.02em; margin-bottom: 0.25rem;
+    }
+    .stat span { color: var(--muted); font-size: 0.82rem; }
+
+    section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+    .sec-label {
+      color: var(--accent-hot); font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 0.7rem;
+    }
+    h2 {
+      margin: 0 0 0.85rem;
+      font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .sec-lead { color: var(--muted); max-width: 46rem; margin: 0 0 1.4rem; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.15rem 1.2rem;
+    }
+    .feature .tag {
+      display: inline-block;
+      color: var(--accent-hot);
+      background: var(--accent-dim);
+      border-radius: 999px;
+      padding: 0.18rem 0.55rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.55rem;
+    }
+    .feature h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+    .feature p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .abstract {
+      background: var(--abstract-bg);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.35rem 1.4rem;
+      color: var(--abstract-text);
+      font-size: 0.98rem;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+    .step {
+      background: var(--bg-elev);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem;
+      min-height: 8.5rem;
+    }
+    .step .n {
+      color: var(--accent-hot); font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem; margin-bottom: 0.45rem;
+    }
+    .step h3 { margin: 0 0 0.35rem; font-size: 0.98rem; }
+    .step p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+    /* compare gallery */
+    .gallery-filters {
+      display: flex; flex-wrap: wrap; gap: 0.45rem;
+      margin: 0 0 1.1rem;
+    }
+    .chip {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 0.32rem 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .chip:hover { color: var(--text); border-color: var(--hover-line); }
+    .chip.active {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .compare-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .compare-head {
+      display: flex; flex-wrap: wrap; gap: 0.4rem 0.55rem;
+      align-items: center;
+      padding: 0.85rem 1rem 0.7rem;
+    }
+    .compare-head h3 {
+      margin: 0;
+      flex: 1 1 100%;
+      font-size: 0.98rem;
+      font-weight: 650;
+    }
+    .mini-tag {
+      font-size: 0.7rem;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.18rem 0.45rem;
+      border-radius: 999px;
+      color: var(--accent-hot);
+      background: var(--accent-dim);
+    }
+    .mini-tag.soft { color: var(--soft-fg); background: var(--soft-bg); }
+    .score-pill {
+      margin-left: auto;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem;
+      color: var(--score);
+    }
+
+    .split-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+      user-select: none;
+    }
+    .pane {
+      position: absolute;
+      inset: 0;
+      width: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      transition: width 0.28s ease, left 0.28s ease, opacity 0.2s ease;
+    }
+    .pane.left { left: 0; }
+    .pane.right { left: 50%; }
+    .pane video,
+    .pane .still {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 200%;
+      max-width: none;
+      object-fit: cover;
+      background: transparent;
+      pointer-events: none;
+    }
+    .pane video { opacity: 0; }
+    .pane video.ready { opacity: 1; }
+    .pane.left video,
+    .pane.left .still { left: 0; }
+    .pane.right video,
+    .pane.right .still { right: 0; left: auto; }
+
+    .split-frame[data-mode="left"] .pane.left { width: 100%; left: 0; z-index: 2; }
+    .split-frame[data-mode="left"] .pane.right { width: 0; left: 100%; opacity: 0; pointer-events: none; }
+    .split-frame[data-mode="left"] .pane.left video,
+    .split-frame[data-mode="left"] .pane.left .still { width: 100%; }
+
+    .split-frame[data-mode="right"] .pane.right { width: 100%; left: 0; z-index: 2; }
+    .split-frame[data-mode="right"] .pane.left { width: 0; left: 0; opacity: 0; pointer-events: none; }
+    .split-frame[data-mode="right"] .pane.right video,
+    .split-frame[data-mode="right"] .pane.right .still { width: 100%; right: auto; left: 0; }
+
+    .divider {
+      position: absolute;
+      top: 0; bottom: 0; left: 50%;
+      width: 2px;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.55);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
+      z-index: 3;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .split-frame:not([data-mode="split"]) .divider { opacity: 0; }
+
+    .pane-label {
+      position: absolute;
+      top: 0.55rem;
+      z-index: 4;
+      padding: 0.22rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      backdrop-filter: blur(6px);
+      pointer-events: none;
+    }
+    .pane.left .pane-label { left: 0.55rem; }
+    .pane.right .pane-label { right: 0.55rem; left: auto; }
+
+    .prompt-overlay {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      max-height: 62%;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 0.55rem;
+      padding: 1.4rem 1rem 0.9rem;
+      background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.88) 28%, rgba(0,0,0,0.94));
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease;
+    }
+    .split-frame:hover .prompt-overlay,
+    .split-frame.show-prompt .prompt-overlay {
+      opacity: 1;
+    }
+    .split-frame.is-interacting .prompt-overlay {
+      opacity: 0 !important;
+    }
+    .prompt-block { display: none; }
+    .split-frame[data-hover="left"] .prompt-block.native,
+    .split-frame[data-hover="right"] .prompt-block.neurco,
+    .split-frame[data-hover="both"] .prompt-block {
+      display: block;
+    }
+    .split-frame:not([data-hover]) .prompt-block.native,
+    .split-frame:not([data-hover]) .prompt-block.neurco {
+      display: block;
+    }
+    .prompt-eyebrow {
+      color: var(--accent-hot);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .prompt-text {
+      margin: 0;
+      color: #f2f2f2;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      max-height: 7.2em;
+      overflow-y: auto;
+      pointer-events: auto;
+      padding-right: 0.25rem;
+      white-space: pre-wrap;
+    }
+    .prompt-text::-webkit-scrollbar { width: 6px; }
+    .prompt-text::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.28); border-radius: 99px; }
+    .results-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+    table.results {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      min-width: 720px;
+    }
+    table.results th, table.results td {
+      padding: 0.7rem 0.85rem;
+      border-bottom: 1px solid var(--line);
+      text-align: right;
+    }
+    table.results th:first-child,
+    table.results td:first-child { text-align: left; }
+    table.results thead th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--table-head);
+    }
+    table.results tbody tr:hover { background: var(--table-hover); }
+    table.results .group-row td {
+      color: var(--accent-hot);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--table-group);
+      text-align: left;
+    }
+    table.results .hi { color: var(--hi); font-weight: 700; }
+    table.results .sub { color: var(--sub); font-weight: 650; }
+    .results-note { color: var(--muted); font-size: 0.86rem; margin: 0.85rem 0 0; }
+
+    .hint {
+      position: absolute;
+      left: 50%;
+      bottom: 0.55rem;
+      transform: translateX(-50%);
+      z-index: 4;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      color: #ddd;
+      background: rgba(0,0,0,0.45);
+      pointer-events: none;
+      opacity: 0.9;
+      transition: opacity 0.2s ease;
+    }
+    .split-frame:not([data-mode="split"]) .hint,
+    .split-frame:hover .hint,
+    .split-frame.is-interacting .hint { opacity: 0; }
+
+    .compare-foot {
+      display: flex; align-items: center; justify-content: space-between; gap: 0.6rem;
+      padding: 0.7rem 1rem 0.9rem;
+    }
+    .compare-foot .meta { color: var(--muted); font-size: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .ghost-btn {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 0.28rem 0.65rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .ghost-btn:hover { color: var(--text); border-color: var(--hover-line-strong); }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 0.85rem;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.2rem 1.25rem;
+    }
+    .panel h3 { margin: 0 0 0.55rem; font-size: 1.05rem; }
+    .panel p, .panel li { color: var(--muted); font-size: 0.92rem; }
+    .panel ul { margin: 0.4rem 0 0.9rem; padding-left: 1.1rem; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .pill {
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 0.28rem 0.7rem; font-size: 0.8rem; color: var(--muted);
+    }
+
+    .cite {
+      background: var(--cite-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      overflow-x: auto;
+      color: var(--cite-fg);
+      font-size: 0.82rem;
+      line-height: 1.5;
+      white-space: pre;
+    }
+    .cite-actions { margin-top: 0.7rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    @media (max-width: 900px) {
+      .stats, .features, .pipeline, .compare-grid, .data-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 { max-width: none; }
+      .nav { display: none; }
+      .theme-toggle { display: inline-flex; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>NeurCo</a>
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="#abstract">Abstract</a>
+          <a href="#method">Method</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#results">Results</a>
+          <a class="primary" href="#citation">BibTeX</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">Light</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" style="border-top:0; padding-top:3.2rem;">
+      <div class="wrap">
+        <div class="eyebrow"><span class="mono">Neural Rendering Compiler</span></div>
+        <h1>Neural Rendering Compiler: Generative Video Models as Programmable Renderers</h1>
+        <p class="lede">
+          NeurCo probes frozen video models to build model-specific capability manuals, then compiles
+          user intent into execution strategies that keep reliable requirements and adapt the rest.
+        </p>
+
+        <ul class="authors">
+          <li>Author One*</li>
+          <li>Author Two*</li>
+          <li>Author Three</li>
+          <li>Author Four</li>
+          <li>Author Five</li>
+        </ul>
+        <div class="affil">Institution Placeholder &nbsp;·&nbsp; *Equal contribution</div>
+
+        <div class="cta-row">
+          <a class="btn solid" href="#results">See Results</a>
+          <a class="btn ghost" href="#gallery">View Comparisons</a>
+          <a class="btn ghost" href="#">Paper (coming soon)</a>
+          <a class="btn ghost" href="#">Code (coming soon)</a>
+          <a class="btn ghost" href="#">Leaderboard (coming soon)</a>
+        </div>
+
+        <div class="stats" aria-label="Key numbers">
+          <div class="stat">
+            <b>380</b>
+            <span>VComBench compositional tasks across T2V / I2V / R2V</span>
+          </div>
+          <div class="stat">
+            <b>68.5→69.7%</b>
+            <span>Seedance 2.5 Req. with NeurCo (T)</span>
+          </div>
+          <div class="stat">
+            <b>46.8→52.3%</b>
+            <span>Wan requirement satisfaction with NeurCo</span>
+          </div>
+          <div class="stat">
+            <b>66.5→69.3%</b>
+            <span>H3 requirement satisfaction with NeurCo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="sec-label">Key features</div>
+        <h2>From implicit model ability to an executable control interface</h2>
+        <p class="sec-lead">
+          Instead of assuming a fixed instruction set, NeurCo measures what a generative renderer can
+          reliably do, then compiles requests against that measured interface.
+        </p>
+        <div class="features">
+          <article class="feature">
+            <div class="tag">Profiling</div>
+            <h3>Offline capability manuals</h3>
+            <p>Probe semantic controls under T2V, I2V, and R2V to estimate which requirements a frozen backend can satisfy.</p>
+          </article>
+          <article class="feature">
+            <div class="tag">IR</div>
+            <h3>Model-agnostic programs</h3>
+            <p>Represent intent as objects, constraints, events, and cameras, independent of any single video model.</p>
+          </article>
+          <article class="feature">
+            <div class="tag">Compile</div>
+            <h3>Capability-guided lowering</h3>
+            <p>Keep reliable requirements; rewrite, reroute, or invoke external operators when native execution is weak.</p>
+          </article>
+          <article class="feature">
+            <div class="tag">Benchmark</div>
+            <h3>VComBench</h3>
+            <p>380 multi-requirement tasks with requirement-level scoring for compositional controllable generation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <div class="wrap">
+        <div class="sec-label">Abstract</div>
+        <div class="abstract">
+          Generative video models are becoming powerful renderers, yet lack the predictable control
+          interfaces of conventional systems such as HTML/CSS engines or Blender. Their capabilities
+          emerge implicitly from training, making it difficult to determine what they can reliably
+          execute. We present Neural Rendering Compiler (NeurCo), which automatically probes frozen
+          video models to construct model-specific capability manuals describing which semantic
+          requirements they can reliably satisfy. NeurCo represents user intent in a model-agnostic
+          intermediate representation of objects, constraints, events, and cameras, then compiles it
+          into model-specific execution strategies. Reliable requirements remain unchanged, while
+          unreliable ones are selectively rewritten or compiled into alternative execution strategies.
+          We introduce VComBench, a benchmark of 380 compositional, multi-requirement tasks spanning
+          text-to-video, image-to-video, and reference-to-video generation. NeurCo improves requirement
+          satisfaction from 46.8% to 52.3% on Wan and from 66.5% to 69.3% on MiniMax H3, and achieves
+          further gains when combined with prompt enhancers, including on Seedance 2.5. Our analysis
+          reveals model-specific differences in control capabilities and trade-offs between
+          controllability and photorealism, highlighting capability-guided compilation as a promising
+          approach to programmable generative video rendering.
+        </div>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="wrap">
+        <div class="sec-label">Method</div>
+        <h2>Profile once. Compile per request.</h2>
+        <p class="sec-lead">
+          NeurCo separates a shared semantic vocabulary from model-specific manuals, then lowers each
+          request into backend-aware execution strategies.
+        </p>
+        <div class="pipeline">
+          <div class="step">
+            <div class="n">01</div>
+            <h3>Probe</h3>
+            <p>Isolate controls at graded difficulties under applicable input modes.</p>
+          </div>
+          <div class="step">
+            <div class="n">02</div>
+            <h3>Manual</h3>
+            <p>Build a capability manual of reliable settings and preferred realizations.</p>
+          </div>
+          <div class="step">
+            <div class="n">03</div>
+            <h3>Compile</h3>
+            <p>Parse IR, preserve strong requirements, adapt weak ones with operators.</p>
+          </div>
+          <div class="step">
+            <div class="n">04</div>
+            <h3>Execute</h3>
+            <p>Run text, first-frame, reference, proxy, or shot-concatenation strategies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap">
+        <div class="sec-label">Gallery</div>
+        <h2>Native vs NeurCo comparisons</h2>
+        <p class="sec-lead">
+          Text only and Text+Operator cards compare against the original prompt, without an external prompt enhancer.
+          External PE cards start from an externally enhanced prompt, then apply NeurCo on top.
+          Hover a half to read that side&apos;s prompt (scroll if it is long). Wan reference-to-video runs are labeled R2V (VACE).
+          Every clip stays at its original resolution; only cards on screen are decoded, so the full set can stay on the page without all of them playing at once.
+        </p>
+
+        <div class="gallery-filters" id="filters" aria-label="Filter comparisons">
+          <button class="chip active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="text" type="button">Text only</button>
+          <button class="chip" data-filter="operator" type="button">Text + Operator</button>
+          <button class="chip" data-filter="external-pe" type="button">External PE</button>
+          <button class="chip" data-filter="H3" type="button">H3</button>
+          <button class="chip" data-filter="Wan" type="button">Wan</button>
+          <button class="chip" data-filter="Seedance 2.5" type="button">Seedance 2.5</button>
+        </div>
+
+        <div class="compare-grid" id="gallery-root"></div>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="wrap">
+        <div class="sec-label">Results</div>
+        <h2>VComBench main table</h2>
+        <p class="sec-lead">
+          Requirement satisfaction (Req.) and all-requirements success (All) on H3, Wan, and Seedance 2.5.
+          NeurCo (T) is text-only compilation; NeurCo (T+O) adds external operators.
+          VBench-2.0 testmini and Sci-VBench testmini are released as data, not shown as tables.
+        </p>
+        <div class="cta-row">
+          <a class="btn solid" href="https://huggingface.co/datasets/Fortunaa/Neurco-Vbench2-testmini" target="_blank" rel="noopener">VBench-2.0 testmini results</a>
+          <a class="btn solid" href="https://huggingface.co/datasets/Fortunaa/Neurco-SciVbench-testmini" target="_blank" rel="noopener">Sci-VBench testmini results</a>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results" aria-label="VComBench results">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th colspan="2">H3</th>
+                <th colspan="2">Wan</th>
+                <th colspan="2">Seedance 2.5</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Req.</th><th>All</th>
+                <th>Req.</th><th>All</th>
+                <th>Req.</th><th>All</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="group-row"><td colspan="7">Native inputs</td></tr>
+              <tr>
+                <td>Native</td>
+                <td>66.5</td><td class="hi">28.2</td>
+                <td>46.8</td><td class="sub">8.4</td>
+                <td class="sub">68.5</td><td class="sub">26.9</td>
+              </tr>
+              <tr>
+                <td>NeurCo (T)</td>
+                <td class="sub">67.7</td><td class="sub">27.9</td>
+                <td class="sub">47.9</td><td class="sub">8.4</td>
+                <td class="hi">69.7</td><td class="hi">27.5</td>
+              </tr>
+              <tr>
+                <td>NeurCo (T+O)</td>
+                <td class="hi">69.3</td><td>25.3</td>
+                <td class="hi">52.3</td><td class="hi">11.8</td>
+                <td>68.2</td><td>25.8</td>
+              </tr>
+              <tr class="group-row"><td colspan="7">With external PE</td></tr>
+              <tr>
+                <td>External PE</td>
+                <td class="sub">72.5</td><td>33.2</td>
+                <td class="sub">50.6</td><td class="sub">12.7</td>
+                <td>71.3</td><td>31.1</td>
+              </tr>
+              <tr>
+                <td>External PE + NeurCo (O)</td>
+                <td class="hi">73.0</td><td class="sub">33.7</td>
+                <td class="hi">52.5</td><td class="hi">14.5</td>
+                <td class="hi">72.1</td><td class="hi">32.2</td>
+              </tr>
+              <tr>
+                <td>External PE + NeurCo (T)</td>
+                <td>72.4</td><td>32.7</td>
+                <td>46.3</td><td>9.0</td>
+                <td>71.7</td><td class="sub">32.1</td>
+              </tr>
+              <tr>
+                <td>External PE + NeurCo (T+O)</td>
+                <td>72.0</td><td class="hi">34.5</td>
+                <td>50.0</td><td>12.3</td>
+                <td class="sub">71.8</td><td>31.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="results-note">
+          On Seedance 2.5, text-only compilation is strongest on native inputs (68.5→69.7 Req.),
+          while operator-augmented NeurCo helps more after external PE. Qualitative videos currently
+          cover H3, Wan, and Seedance 2.5.
+        </p>
+      </div>
+    </section>
+
+    <section id="citation">
+      <div class="wrap">
+        <div class="sec-label">Citation</div>
+        <h2>BibTeX</h2>
+        <pre class="cite mono" id="bibtex">@article{neurco2026,
+  title   = {Neural Rendering Compiler: Generative Video Models as Programmable Renderers},
+  author  = {Author One and Author Two and Author Three and Author Four and Author Five},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</pre>
+        <div class="cite-actions">
+          <button class="btn ghost" id="copy-bib" type="button">Copy BibTeX</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      NeurCo project page · Neural Rendering Compiler · Data-first release · Placeholder authors pending final author list.
+    </div>
+  </footer>
+
+  <script>
+    const themeBtn = document.getElementById("theme-toggle");
+    const applyTheme = (theme) => {
+      const light = theme === "light";
+      document.documentElement.dataset.theme = light ? "light" : "dark";
+      themeBtn.textContent = light ? "Dark" : "Light";
+      themeBtn.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+      themeBtn.setAttribute("aria-pressed", light ? "true" : "false");
+    };
+    applyTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
+    themeBtn.addEventListener("click", () => {
+      const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      try { localStorage.setItem("neurco-theme", next); } catch (e) {}
+      applyTheme(next);
+    });
+
+    const topbar = document.getElementById("topbar");
+    const onScroll = () => topbar.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    document.getElementById("copy-bib").addEventListener("click", async () => {
+      const text = document.getElementById("bibtex").innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById("copy-bib");
+        const old = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(() => { btn.textContent = old; }, 1200);
+      } catch (e) {
+        alert("Copy failed — select the BibTeX block manually.");
+      }
+    });
+
+    function esc(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("`", "&#96;")
+        .replaceAll("${", "$&#123;");
+    }
+
+    function wireCard(card) {
+      const frame = card.querySelector(".split-frame");
+      const left = frame.querySelector(".pane.left");
+      const right = frame.querySelector(".pane.right");
+      const vL = left.querySelector("video");
+      const vR = right.querySelector("video");
+      const splitBtn = card.querySelector("[data-action='split']");
+
+      const setMode = (mode) => {
+        frame.dataset.mode = mode;
+        frame.classList.toggle("is-interacting", mode !== "split");
+        playCard(card, true);
+      };
+
+      const toggleSide = (side) => {
+        const cur = frame.dataset.mode || "split";
+        setMode(cur === side ? "split" : side);
+      };
+
+      frame.querySelectorAll(".prompt-text").forEach((el) => {
+        el.addEventListener("click", (e) => e.stopPropagation());
+        el.addEventListener("wheel", (e) => e.stopPropagation(), { passive: true });
+      });
+      left.addEventListener("click", () => toggleSide("left"));
+      right.addEventListener("click", () => toggleSide("right"));
+      splitBtn.addEventListener("click", () => setMode("split"));
+
+      const setHover = (which) => { frame.dataset.hover = which; };
+      left.addEventListener("mouseenter", () => setHover("left"));
+      right.addEventListener("mouseenter", () => setHover("right"));
+      frame.addEventListener("mouseleave", () => { delete frame.dataset.hover; });
+      // when pointer is near the center divider, show both
+      frame.addEventListener("mousemove", (e) => {
+        if ((frame.dataset.mode || "split") !== "split") return;
+        const rect = frame.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        if (x > 0.42 && x < 0.58) setHover("both");
+        else setHover(x < 0.5 ? "left" : "right");
+      });
+
+      const sync = () => {
+        if ((frame.dataset.mode || "split") !== "split") return;
+        if (Math.abs(vL.currentTime - vR.currentTime) > 0.35) {
+          vR.currentTime = vL.currentTime;
+        }
+      };
+      vL.addEventListener("timeupdate", sync);
+
+      [vL, vR].forEach((v) => {
+        v.muted = true;
+        v.loop = true;
+        v.playsInline = true;
+        v.preload = "none";
+      });
+    }
+
+    function attachSrc(video) {
+      if (video.dataset.attached) return;
+      video.dataset.attached = "1";
+      video.preload = "auto";
+      video.muted = true;
+      video.src = video.dataset.src;
+      const show = () => video.classList.add("ready");
+      video.addEventListener("loadeddata", show, { once: true });
+      video.addEventListener("playing", show, { once: true });
+    }
+
+    const startQueue = [];
+    let starting = 0;
+    const START_LIMIT = 4;
+
+    function pumpQueue() {
+      while (starting < START_LIMIT && startQueue.length) {
+        const video = startQueue.shift();
+        if (video.classList.contains("ready")) continue;
+        starting++;
+        attachSrc(video);
+        const release = () => {
+          if (video.dataset.released) return;
+          video.dataset.released = "1";
+          starting--;
+          pumpQueue();
+        };
+        video.addEventListener("loadeddata", release, { once: true });
+        video.addEventListener("error", release, { once: true });
+        video.play().catch(() => {});
+      }
+    }
+
+    function enqueue(video, first) {
+      if (!video) return;
+      if (video.getAttribute("src")) {
+        video.play().catch(() => {});
+        return;
+      }
+      const i = startQueue.indexOf(video);
+      if (i >= 0) startQueue.splice(i, 1);
+      if (first) startQueue.unshift(video);
+      else startQueue.push(video);
+      pumpQueue();
+    }
+
+    function playCard(card, first) {
+      const frame = card.querySelector(".split-frame");
+      const [left, right] = card.querySelectorAll("video");
+      const mode = frame.dataset.mode || "split";
+      const active = mode === "left" ? [left] : mode === "right" ? [right] : [left, right];
+      [left, right].forEach((video) => {
+        if (!active.includes(video)) video.pause();
+      });
+      active.forEach((video) => enqueue(video, first));
+    }
+
+    function startAll(cards) {
+      const visible = [];
+      const rest = [];
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.bottom > 0 && rect.top < window.innerHeight) visible.push(card);
+        else rest.push(card);
+      });
+      visible.forEach((card) => playCard(card, true));
+      const startedAt = performance.now();
+      const kickRest = () => {
+        const screenReady = starting === 0 && startQueue.length === 0;
+        if (screenReady || performance.now() - startedAt > 6000) {
+          rest.forEach((card) => playCard(card, false));
+          return;
+        }
+        setTimeout(kickRest, 200);
+      };
+      kickRest();
+    }
+
+    let galleryObserver = null;
+    function observeGallery() {
+      if (galleryObserver) galleryObserver.disconnect();
+      const cards = [...document.querySelectorAll("#gallery-root .compare-card")];
+      galleryObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) playCard(entry.target, true);
+        });
+      }, { rootMargin: "240px 0px", threshold: 0.01 });
+      cards.forEach((card) => galleryObserver.observe(card));
+      startAll(cards);
+    }
+
+    function renderCases(cases, filter) {
+      const root = document.getElementById("gallery-root");
+      const filtered = cases.filter((c) => {
+        if (filter === "all") return true;
+        if (filter === "text" || filter === "operator" || filter === "external-pe") return c.method === filter;
+        return c.backend === filter;
+      });
+
+      root.innerHTML = filtered.map((c) => {
+        const opLine = `<div class="meta mono">${esc(c.id)}</div>`;
+        return `
+        <article class="compare-card" data-method="${esc(c.method)}" data-backend="${esc(c.backend)}">
+          <div class="compare-head">
+            <h3>${esc(c.topic)}</h3>
+            <span class="mini-tag">${esc(c.backend)}</span>
+            <span class="mini-tag soft">${esc(c.mode)}</span>
+            <span class="mini-tag soft">${esc(c.methodLabel)}</span>
+            <span class="score-pill">${esc(c.score)}</span>
+          </div>
+          <div class="split-frame" data-mode="split">
+            <div class="pane left" title="Click to expand Native">
+              ${c.leftPoster ? `<img class="still" alt="" loading="eager" decoding="async" src="${esc(c.leftPoster)}">` : ""}
+              <video data-src="${esc(c.leftVideo)}" muted loop playsinline preload="none"></video>
+              <span class="pane-label">${esc(c.leftLabel)}</span>
+            </div>
+            <div class="pane right" title="Click to expand NeurCo">
+              ${c.rightPoster ? `<img class="still" alt="" loading="eager" decoding="async" src="${esc(c.rightPoster)}">` : ""}
+              <video data-src="${esc(c.rightVideo)}" muted loop playsinline preload="none"></video>
+              <span class="pane-label">${esc(c.rightLabel)}</span>
+            </div>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="prompt-overlay" aria-hidden="true">
+              <div class="prompt-block native">
+                <div class="prompt-eyebrow">${esc(c.leftLabel)} prompt</div>
+                <p class="prompt-text">${esc(c.nativePrompt || c.prompt || "")}</p>
+              </div>
+              <div class="prompt-block neurco">
+                <div class="prompt-eyebrow">${esc(c.rightLabel)} prompt</div>
+                <p class="prompt-text">${esc(c.neurcoPrompt || c.prompt || "")}</p>
+              </div>
+            </div>
+            <div class="hint">Hover a half for its prompt · click to expand</div>
+          </div>
+          <div class="compare-foot">
+            ${opLine}
+            <button class="ghost-btn" data-action="split" type="button">Split view</button>
+          </div>
+        </article>`;
+      }).join("");
+
+      root.querySelectorAll(".compare-card").forEach(wireCard);
+      observeGallery();
+    }
+
+    let allCases = [];
+    let activeFilter = "all";
+
+    fetch("./gallery_cases.json")
+      .then((r) => r.json())
+      .then((cases) => {
+        allCases = cases;
+        renderCases(allCases, activeFilter);
+      })
+      .catch((err) => {
+        document.getElementById("gallery-root").innerHTML =
+          `<p style="color:#aaa">Failed to load gallery_cases.json (${esc(err)})</p>`;
+      });
+
+    document.getElementById("filters").addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      activeFilter = btn.dataset.filter;
+      document.querySelectorAll("#filters .chip").forEach((c) => c.classList.toggle("active", c === btn));
+      renderCases(allCases, activeFilter);
+    });
+  </script>
+</body>
+</html>

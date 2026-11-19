@@ -1,0 +1,1260 @@
+[
+  {
+    "id": "r2v_k3_r0_0417",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A quiet autumn moment",
+    "score": "0/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/a4d25be48f51a31d.mp4",
+    "rightVideo": "play/02716b6c688a9128.mp4",
+    "nativePrompt": "Frame the woman in Image 1 from the waist up beneath an autumn canopy, wearing a colorful scarf and cozy sweater. She tidies her scarf, tucking its loose end into place, then looks around at the golden and orange leaves falling nearby with a slight, content smile. A wooden railing crosses the lower foreground. An acorn falls from the canopy onto the railing, bounces once, then settles on it, remaining clearly visible.",
+    "neurcoPrompt": "Frame the woman in Image 1 in a medium shot from the waist up beneath an autumn canopy, wearing a colorful scarf and cozy sweater. She tidies her scarf by using her fingers to tuck its loose end into place, then looks around at the golden and orange leaves falling nearby with a single slight, content smile. A wooden railing crosses the lower foreground. An acorn falls from the canopy under gravity, strikes the railing in a collision, bounces off it once, then settles on it, remaining clearly visible.",
+    "operators": [],
+    "improved": [
+      "The woman tidies her scarf and tucks its loose end into place.",
+      "The woman is framed from the waist up.",
+      "An acorn falls onto the railing, bounces once, and settles."
+    ],
+    "leftPoster": "posters/a4d25be48f51a31d.jpg",
+    "rightPoster": "posters/02716b6c688a9128.jpg"
+  },
+  {
+    "id": "i2v_k3_r0_0362",
+    "backend": "H3",
+    "mode": "I2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "The Parthenon above the rocky Acropolis foreground",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/550a05904bede5eb.mp4",
+    "rightVideo": "play/b580726cabe3cb01.mp4",
+    "nativePrompt": "Begin from the supplied view of the weathered Parthenon at the Acropolis. Pan right until the temple sits in the left third of the frame. Then tilt down, revealing more rocky foreground while keeping the temple visible. Finally, push in toward the temple, preserving its left-third placement.",
+    "neurcoPrompt": "Begin from the supplied view of the weathered Parthenon at the Acropolis. Pan the camera right until the temple is positioned in the left third of the camera frame. Then tilt the camera down, revealing more rocky foreground while keeping the temple visible. Finally, push the camera in toward the temple, preserving its left-third placement.",
+    "operators": [],
+    "improved": [
+      "The initial pan places the temple in the left third, where it remains during the subsequent movements.",
+      "A rightward pan, followed by a downward tilt, followed by a push-in."
+    ],
+    "leftPoster": "posters/550a05904bede5eb.jpg",
+    "rightPoster": "posters/b580726cabe3cb01.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0490",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Three podcast hosts encounter frozen coffee",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/6571570fbbb8579b.mp4",
+    "rightVideo": "play/2e2ff5d73fc35a4f.mp4",
+    "nativePrompt": "The host in Image 1, the host in Image 2, and the host in Image 3 sit side by side at a long white podcast table with coffee cups and mini green plants, against gray acoustic panels. Preserve their reference appearances. The host in Image 1 adjusts her headphones; the host in Image 2 adjusts her glasses. The host in Image 3 tilts a transparent coffee cup: its liquid initially sloshes, then ice crystals spread through it until it becomes a solid frozen block, staying fixed as he tilts the cup farther.",
+    "neurcoPrompt": "The host in Image 1, the host in Image 2, and the host in Image 3 sit side by side at a long white podcast table with coffee cups and mini green plants, against gray acoustic panels. Preserve their reference appearances. The host in Image 1 uses her fingers to adjust her headphones; the host in Image 2 uses her fingers to adjust her glasses. The host in Image 3 grips a transparent coffee cup with his hand and tilts it: its liquid initially sloshes, then ice crystals spread through it until it becomes a solid frozen block, staying fixed as he tilts the cup farther while maintaining his grip.",
+    "operators": [],
+    "improved": [
+      "Image 1's host adjusts her headphones, Image 2's host adjusts her glasses, and Image 3's host tilts the coffee cup.",
+      "Liquid coffee develops ice crystals and becomes a solid block inside a transparent cup."
+    ],
+    "leftPoster": "posters/6571570fbbb8579b.jpg",
+    "rightPoster": "posters/2e2ff5d73fc35a4f.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0451",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Ballet turn with gravity-driven fabric movement",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/62add535ef73a574.mp4",
+    "rightVideo": "play/1b2c333cebfcc83a.mp4",
+    "nativePrompt": "In a dance studio, a ballet performer makes a controlled 45-degree turn in place, keeping the supporting leg fully extended and the lifted foot beside the supporting knee. The arms draw from an open position into a rounded ballet position during the turn. The supporting foot remains at the same spot on the studio floor. As the performer finishes, the dress hem falls downward under gravity and settles.",
+    "neurcoPrompt": "In a dance studio, a ballet performer executes a controlled ballet turn in place, rotating exactly 45 degrees from the starting facing direction to an ending facing direction 45 degrees from the starting direction, keeping the supporting leg fully extended and the lifted foot beside the supporting knee. The arms draw from an open position into a rounded ballet position during the turn. The supporting foot remains at the same spot on the studio floor. As the performer finishes the turn, the dress hem falls downward under gravity, then the dress hem settles.",
+    "operators": [],
+    "improved": [
+      "The performer executes a ballet turn with a raised foot and rounded arms.",
+      "Gravity pulls the dress hem downward until it settles."
+    ],
+    "leftPoster": "posters/62add535ef73a574.jpg",
+    "rightPoster": "posters/1b2c333cebfcc83a.jpg"
+  },
+  {
+    "id": "t2v_k3_r1_0005",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Street vendor framed during a zoom and orbit",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/a989d95c027127b8.mp4",
+    "rightVideo": "play/b77a9651bad0dd8d.mp4",
+    "nativePrompt": "A person working as a street vendor is framed in the right third, with breathing room to their left. From a fixed position, the camera zooms tightly onto the vendor. It then orbits around them, tracking their position and keeping them in the right third throughout.",
+    "neurcoPrompt": "A person working as a street vendor is framed in the right third, with breathing room to their left. From a fixed position, the camera zooms tightly onto the vendor. It then orbits around them, tracking their position and keeping them positioned in the right third of the frame throughout the orbit.",
+    "operators": [],
+    "improved": [
+      "The vendor remains framed in the right third throughout both camera movements.",
+      "A stationary zoom-in is followed by an orbit around the vendor."
+    ],
+    "leftPoster": "posters/a989d95c027127b8.jpg",
+    "rightPoster": "posters/b77a9651bad0dd8d.jpg"
+  },
+  {
+    "id": "i2v_k6_r2_0011",
+    "backend": "H3",
+    "mode": "I2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Winter tea preparation beside a Chinese pagoda",
+    "score": "3/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/52fa386fa7b8d768.mp4",
+    "rightVideo": "play/4e3a30b8b1a49643.mp4",
+    "nativePrompt": "Begin with the snowy Chinese pagoda as shown. At second 1, two attendants enter the lower foreground: one wears a red coat and pushes a tea cart; the other wears a blue coat and carries a broom. The cart holds an open pot of vigorously boiling water, with continuous rolling bubbles and rising steam. Its label reads \"茶\" in Japanese. The red-coated attendant stops and stirs the water while the blue-coated attendant sweeps snow. Slowly tilt the camera upward toward the pagoda’s upper roof and snowy sky.",
+    "neurcoPrompt": "Begin with the snowy Chinese pagoda as shown. At second 1, two attendants enter the lower foreground: one wears a red coat and pushes a tea cart ahead of them; the other wears a blue coat and carries a broom. The cart holds an open pot of water boiling vigorously, with bubbles continuously rolling across the surface and steam continuously rising from it. Its label reads \"茶\" in Japanese. The red-coated attendant stops pushing the tea cart and stirs the water in the pot with small, controlled circular hand movements while the blue-coated attendant sweeps snow with the broom. Slowly tilt the camera upward toward the pagoda’s upper roof and snowy sky.",
+    "operators": [],
+    "improved": [
+      "One attendant stirs boiling water while the other sweeps snow.",
+      "The camera tilts upward from the foreground toward the pagoda’s upper roof and sky.",
+      "Water in an open pot boils vigorously with rolling bubbles and steam."
+    ],
+    "leftPoster": "posters/52fa386fa7b8d768.jpg",
+    "rightPoster": "posters/4e3a30b8b1a49643.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0747",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Rediscovering a childhood picture book",
+    "score": "3/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/c5e2907943789951.mp4",
+    "rightVideo": "play/7e673da21b39f064.mp4",
+    "nativePrompt": "In the bedroom from Image 1, the woman in Image 1 sits beside the bedside drawer, looking downcast. Follow her uninterrupted: at second 2, she opens the drawer; she looks inside at the childhood picture book in Image 2; she lifts the already-open book out; she rests it across her lap; at second 7, her downcast expression becomes a delighted smile. Keep the book open to the illustrated spread from Image 2. As she holds it, push the camera toward the book, increasing its height from about 20% to about 80% of the frame.",
+    "neurcoPrompt": "In the bedroom from Image 1, the woman in Image 1 sits beside the bedside drawer, looking downcast. Follow her uninterrupted: at second 2, she opens the bedside drawer; then she looks inside the drawer at the childhood picture book in Image 2; then she lifts the already-open book out of the drawer; then she rests it across her lap; at second 7, her downcast expression becomes a delighted smile. Keep the book open to the illustrated spread from Image 2. As she holds it, push the camera toward the book, increasing its height from about 20% to about 80% of the frame.",
+    "operators": [],
+    "improved": [
+      "Her initially downcast expression becomes a delighted smile within the uninterrupted shot.",
+      "She opens the drawer, looks inside, lifts out the book, rests it on her lap, and smiles, in that order.",
+      "At second 2 she opens the drawer; at second 7 her expression becomes a delighted smile."
+    ],
+    "leftPoster": "posters/c5e2907943789951.jpg",
+    "rightPoster": "posters/7e673da21b39f064.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0756",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A living topiary shoe becomes a satin shoe",
+    "score": "2/6 → 5/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/95fa00be2de1831b.mp4",
+    "rightVideo": "play/7ac082333574b267.mp4",
+    "nativePrompt": "Among the flowers beneath pink clouds, the green shoe-shaped plant in Image 1 is a living plant creature, with two small eyes nestled in its moss, resting on the pedestal. In slow motion, three moments unfold in sequence: the girl carefully closes her scissors to trim one tuft; the severed tuft falls onto the pedestal; then the creature transforms into the pale pink satin shoe in Image 2. Its eyes merge into the surface as its green covering becomes pale pink satin, leaving the finished shoe standing steadily.",
+    "neurcoPrompt": "Among the flowers beneath pink clouds, the green shoe-shaped plant in Image 1 is a living plant creature, with two small eyes nestled in its moss, resting on the pedestal. At slow-motion speed, three moments unfold in sequence: the girl carefully closes the blades of her scissors once to trim one tuft; the severed tuft falls onto the pedestal; then the creature transforms into the pale pink satin shoe in Image 2. Its eyes merge into the surface as its green covering becomes pale pink satin, leaving the finished shoe standing steadily.",
+    "operators": [],
+    "improved": [
+      "The girl carefully operates scissors to trim a single tuft from the plant creature.",
+      "The scissors trim the tuft, the tuft falls, and the creature transforms, in that order.",
+      "Gravity carries the severed tuft downward onto the pedestal."
+    ],
+    "leftPoster": "posters/95fa00be2de1831b.jpg",
+    "rightPoster": "posters/7ac082333574b267.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0415",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Magical jungle slapstick",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/0391bc25d5fd9d63.mp4",
+    "rightVideo": "play/f517fdb80447e275.mp4",
+    "nativePrompt": "In a jungle clearing, render the elephant in Image 1 and the man in Image 2 as recognizable anime characters. The man pushes a cookie along the ground with his nose, then eats it. The elephant points its trunk toward a shallow puddle: rippling liquid water freezes outward into solid ice, trapping floating leaves. Beside them, a gorilla grabs the man's belt and hoists him until he hangs upside down. Keep all three characters visible as the ice finishes forming.",
+    "neurcoPrompt": "In a jungle clearing, render the elephant in Image 1 and the man in Image 2 as recognizable characters in an anime visual style. The man first pushes a cookie along the ground with his nose, then eats the cookie. The elephant points its trunk toward a shallow puddle: rippling liquid water freezes outward into solid ice, trapping floating leaves. Beside them, a gorilla first grabs the man's belt, then hoists the man until he hangs upside down. Keep all three characters visible as the ice finishes forming.\n\nUse Image 3 as the visual style reference for the whole video.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "F1",
+        "target": "anime characters",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The jungle scene and reference characters are rendered in anime style.",
+      "A rippling puddle freezes into solid ice, trapping floating leaves."
+    ],
+    "leftPoster": "posters/0391bc25d5fd9d63.jpg",
+    "rightPoster": "posters/f517fdb80447e275.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0670",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Athlete backpedaling in the rain",
+    "score": "3/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/bcdd38cf800e181b.mp4",
+    "rightVideo": "play/2ba4cb0c835a667e.mp4",
+    "nativePrompt": "In anime style, a person training as an athlete backpedals through falling rain, keeping their back toward the camera and approaching it over a distance of about 60% of the frame width. Watch from a low angle behind the athlete. The camera first trucks horizontally left, then trucks horizontally right, maintaining its low height and rear view throughout.",
+    "neurcoPrompt": "In anime style, a person training as an athlete backpedals through falling rain, keeping their back toward the camera and approaching it over a distance of about 60% of the frame width. Watch from a low angle behind the athlete. The camera first performs a horizontal truck left, then performs a horizontal truck right, maintaining its low height and rear view throughout.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "K1",
+        "target": "first trucks horizontally left, then trucks horizontally right",
+        "note": "拆不了镜头，改用定向改写"
+      }
+    ],
+    "improved": [
+      "The camera trucks left, then trucks right.",
+      "The camera watches the athlete from a low angle throughout.",
+      "The athlete backpedals toward the camera over a distance of about 60% of the frame width."
+    ],
+    "leftPoster": "posters/bcdd38cf800e181b.jpg",
+    "rightPoster": "posters/2ba4cb0c835a667e.jpg"
+  },
+  {
+    "id": "r2v_k6_r1_0043",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Focused desk work interrupted by a dropped pen",
+    "score": "4/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/a1d0323ec81c3abc.mp4",
+    "rightVideo": "play/62eec0d6316bab18.mp4",
+    "nativePrompt": "The young woman in Image 1 sits at a wooden desk wearing glasses, maintaining a focused expression throughout. A sheet of paper lies in front of a stack of documents. She writes on the sheet with small, precise finger movements. Her work is interrupted when the pen slips from her fingers, falls onto the wooden desktop, bounces once, and settles.",
+    "neurcoPrompt": "The young woman in Image 1 sits at a wooden desk wearing glasses, keeping the same focused expression from start to finish. A sheet of paper lies in front of a stack of documents. She writes on the sheet using small, precise movements of the fingers holding the pen. Her work is interrupted when the pen slips from her fingers, falls under gravity onto the wooden desktop, bounces once after striking the desktop, and settles.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T2",
+        "target": "bounces once",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "One pen-dropping incident interrupts her ongoing writing.",
+      "The dropped pen bounces once on the desktop before settling."
+    ],
+    "leftPoster": "posters/a1d0323ec81c3abc.jpg",
+    "rightPoster": "posters/62eec0d6316bab18.jpg"
+  },
+  {
+    "id": "t2v_k6_r1_0041",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A speed-limit sign reimagined as a T-shirt",
+    "score": "4/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/6860b389bc73baa5.mp4",
+    "rightVideo": "play/4ef213f589133c92.mp4",
+    "nativePrompt": "Show a single road-sign–T-shirt hybrid, viewed from the front. The shirt is white, circular-bodied, short-sleeved, and black-lettered. Its torso takes the round shape of a speed-limit sign while retaining the shirt’s neckline and sleeves. Printed directly on its chest, \"SPEED LIMIT\" appears above \"40 mph\". The shirt remains still, with the print clearly visible.",
+    "neurcoPrompt": "Show a single road-sign–T-shirt hybrid, viewed from the front. The shirt is white in color, circular in body shape, short-sleeved, and lettered in black. Its torso takes the round shape of a speed-limit sign while retaining the shirt’s neckline and sleeves. Printed directly on its chest, \"SPEED LIMIT\" appears above \"40 mph\". The shirt remains still, with the print clearly visible.\n\nImage 1 shows road-sign T-shirt hybrid; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A3",
+        "target": "white, circular-bodied, short-sleeved, and black-lettered",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The shirt is white, circular-bodied, short-sleeved, and black-lettered.",
+      "A single composite object combines a road sign’s circular body with a T-shirt’s neckline and sleeves."
+    ],
+    "leftPoster": "posters/6860b389bc73baa5.jpg",
+    "rightPoster": "posters/4ef213f589133c92.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0779",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A hiking shirt fluttering on a mountain-trail rock",
+    "score": "3/6 → 5/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/942e432c2edcac3e.mp4",
+    "rightVideo": "play/781a5666ada818da.mp4",
+    "nativePrompt": "Lay the t-shirt in Image 1 face-up on a rock, preserving its cream fabric and blue printed design. Keep the shirt and rock in front of the winding hiking trail. In one continuous shot, begin in medium close-up and pan right, then push into an extreme close-up of the fabric, then pull back to a wide view revealing the mountain landscape and distant trees. At second 2, a breeze begins lifting the shirt’s lower hem; the hem rises and settles back onto the rock five times.",
+    "neurcoPrompt": "Lay the t-shirt in Image 1 face-up on a rock, preserving its cream fabric and blue printed design. Keep the shirt and rock in front of the winding hiking trail. In one continuous shot, begin in a medium close-up; pan right, then push in to an extreme close-up of the fabric, then pull back to a wide shot revealing the mountain landscape and distant trees. At second 2, a breeze begins lifting the shirt’s lower hem; the hem rises once and settles back onto the rock, rises a second time and settles back onto the rock, rises a third time and settles back onto the rock, rises a fourth time and settles back onto the rock, and rises a fifth time and settles back onto the rock.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T2",
+        "target": "the hem rises and settles back onto the rock five times",
+        "note": ""
+      },
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "K1",
+        "target": "pan right, then push into an extreme close-up of the fabric, then pull back to a wide view",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "A continuous rightward pan, followed by a push-in, followed by a pull-back.",
+      "The framing changes from medium close-up to extreme close-up to wide view."
+    ],
+    "leftPoster": "posters/942e432c2edcac3e.jpg",
+    "rightPoster": "posters/781a5666ada818da.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0451",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "An intimate birthday wish in a home kitchen",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/6ab3b6ca80765c9a.mp4",
+    "rightVideo": "play/dbe5cf7e2743d756.mp4",
+    "nativePrompt": "The man in Image 1 celebrates his birthday at home, holding a piece of cake with a single burning candle. Balloons and birthday decorations remain in the background. Beside him on the kitchen counter, water continuously bubbles at a rolling boil in a saucepan on a hotplate. He begins with a wistful expression, gently blows out the candle, then breaks into a delighted smile midway through the uninterrupted shot. The candle remains extinguished, and the water keeps boiling.",
+    "neurcoPrompt": "The man in Image 1 celebrates his birthday at home, holding a piece of cake with a single burning candle. Balloons and birthday decorations remain in the background. Beside him on the kitchen counter, water continuously bubbles at a rolling boil in a saucepan on a hotplate. He begins the uninterrupted shot with a wistful expression, gently blows out the candle once, then changes to a delighted smile midway through the shot. The candle remains extinguished for the rest of the shot, and the water keeps boiling.",
+    "operators": [],
+    "improved": [
+      "The man's wistful expression becomes a delighted smile midway through the continuous shot.",
+      "The single candle changes from burning to extinguished and remains extinguished."
+    ],
+    "leftPoster": "posters/6ab3b6ca80765c9a.jpg",
+    "rightPoster": "posters/dbe5cf7e2743d756.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0389",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Fruit-shaped everyday objects",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/28e44cc19c70868b.mp4",
+    "rightVideo": "play/41008a77cd8f9a94.mp4",
+    "nativePrompt": "A watermelon chair has a red flesh seat dotted with black seeds, a curved green-striped rind backrest, and four legs. Behind it, a pineapple shopping cart has a golden pineapple-skin basket, a leafy crown handle, and wheels. The cart rolls forward with its basket pressed against the chair’s back, pushing the watermelon chair across a plain floor. Both objects remain visible as they move together.",
+    "neurcoPrompt": "A watermelon chair has a red flesh seat with black seeds dotted across it, a curved backrest made of green-striped rind, and exactly four legs. Behind it, a pineapple shopping cart has a golden pineapple-skin basket, a leafy crown handle, and wheels. The cart rolls forward with its basket pressed against the chair’s back, pushing the watermelon chair forward through that contact across a plain floor. Both objects remain visible as they move together.",
+    "operators": [],
+    "improved": [
+      "Two composite objects: a watermelon chair and a pineapple shopping cart.",
+      "The pineapple shopping cart pushes the watermelon chair by maintaining contact with its back."
+    ],
+    "leftPoster": "posters/28e44cc19c70868b.jpg",
+    "rightPoster": "posters/41008a77cd8f9a94.jpg"
+  },
+  {
+    "id": "i2v_k3_r2_0003",
+    "backend": "Wan",
+    "mode": "I2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Futuristic waterfront architecture awakening into hybrid forms",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/c95d87a0fce10b39.mp4",
+    "rightVideo": "play/b1260f502da12550.mp4",
+    "nativePrompt": "Begin with the pictured aerial view of the futuristic cliffside building, curved orange walkway, waterfront plaza, and distant islands. The building lifts from its supports and morphs into a manta-ray spacecraft, retaining its white architectural shell while unfolding broad organic fins. The orange walkway becomes a serpent-bridge, retaining its railings and walking surface while developing a serpentine head and flexing body. With both hybrid forms visible, the manta-ray spacecraft glides toward the camera, traveling about 30% of the frame width. The cliff, plaza, water, and islands remain recognizable.",
+    "neurcoPrompt": "Begin with the pictured aerial view of the futuristic cliffside building, curved orange walkway, waterfront plaza, and distant islands. The building first lifts from its supports and morphs from a building into a manta-ray spacecraft, retaining its white architectural shell while unfolding broad organic fins. The orange walkway then morphs from a walkway into a serpent-bridge, retaining its railings and walking surface while developing a serpentine head and flexing body. With both hybrid forms visible, the manta-ray spacecraft then glides toward the camera, traveling a distance equal to about 30% of the frame width. The cliff, plaza, water, and islands remain recognizable.",
+    "operators": [],
+    "improved": [
+      "The futuristic building visibly morphs into a manta-ray spacecraft.",
+      "After transforming, the manta-ray spacecraft glides toward the camera over about 30% of the frame width."
+    ],
+    "leftPoster": "posters/c95d87a0fce10b39.jpg",
+    "rightPoster": "posters/b1260f502da12550.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0476",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A café guitarist receives sunflowers",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/b057785356eaccfc.mp4",
+    "rightVideo": "play/0fecdd24255b65c1.mp4",
+    "nativePrompt": "In the café in Image 5, the man in Image 2 sits on a café chair, holding and strumming the acoustic guitar in Image 4, his lips moving in song. The woman in Image 1 walks beside him carrying the wrapped sunflower bouquet in Image 3, then places it on the table beside his chair. Keep both people clearly visible as the main subjects, with his guitar playing continuing while she delivers the flowers.",
+    "neurcoPrompt": "In the café in Image 5, the man shown in Image 2 sits on a café chair, holding the acoustic guitar shown in Image 4 and moving his fingers across its strings to strum it, his lips opening and closing as he sings. The woman shown in Image 1 walks beside him while holding the wrapped sunflower bouquet shown in Image 3, then places that bouquet on the table beside his chair. Keep both people clearly visible as the main subjects, with the man continuing to play his guitar while the woman delivers the flowers.",
+    "operators": [],
+    "improved": [
+      "The people from Images 1 and 2 appear as the main acting subjects in the café.",
+      "The woman from Image 1 holds the bouquet from Image 3; the man from Image 2 holds the guitar from Image 4."
+    ],
+    "leftPoster": "posters/b057785356eaccfc.jpg",
+    "rightPoster": "posters/0fecdd24255b65c1.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0406",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Fast lateral camera movement past a building",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/9ef006cbcafa0d9d.mp4",
+    "rightVideo": "play/3c8333f8f9d2b71e.mp4",
+    "nativePrompt": "The camera trucks rapidly to the left past a building. Frame the building in the right third throughout the move.",
+    "neurcoPrompt": "The camera moves rapidly sideways to the left in a truck-left move past a building. Frame the building in the right third throughout the move.",
+    "operators": [],
+    "improved": [
+      "The camera translates laterally to the left past the building.",
+      "The camera makes a rapid leftward lateral pass."
+    ],
+    "leftPoster": "posters/9ef006cbcafa0d9d.jpg",
+    "rightPoster": "posters/3c8333f8f9d2b71e.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0407",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Atmospheric pressure crushing an evacuated aluminium can",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/ac7f5507c4005ebb.mp4",
+    "rightVideo": "play/a00478674946a65a.mp4",
+    "nativePrompt": "Air is steadily drawn out of an empty, thin aluminium can through an airtight vacuum connection. Show the process at normal, real-time speed. As the pressure inside falls, atmospheric pressure buckles the walls inward, crushing the can in one continuous collapse.",
+    "neurcoPrompt": "Air flows steadily from inside an empty, thin aluminium can to the outside through an airtight vacuum connection. Show the process at normal, real-time speed. As the pressure inside falls, atmospheric pressure buckles the walls inward, crushing the can in one continuous collapse.",
+    "operators": [],
+    "improved": [
+      "The can undergoes one continuous inward collapse.",
+      "A pressure difference crushes the evacuated can inward."
+    ],
+    "leftPoster": "posters/ac7f5507c4005ebb.jpg",
+    "rightPoster": "posters/a00478674946a65a.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0492",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "An armored woman retrieves a dropped cup in a cherry-blossom courtyard.",
+    "score": "0/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/0fd7e54725dac0ca.mp4",
+    "rightVideo": "play/304cd379ae83565e.mp4",
+    "nativePrompt": "The woman in Image 1 wears hybrid armor adorned with iridescent gemstones in a courtyard framed by moss-covered stone walls and wooden arches. Cherry-blossom petals fall around her as she drinks from a small metal cup. The cup slips from her hand and falls onto the stone paving. It strikes the ground, bounces once, then lands on its side and settles without bouncing again. She bends down and retrieves the cup.",
+    "neurcoPrompt": "The woman in Image 1 wears armor that is hybrid and adorned with iridescent gemstones in a courtyard framed by moss-covered stone walls and wooden arches. Cherry-blossom petals fall around her as she drinks from a small cup made of metal. The cup slips from her hand and falls under gravity onto the stone paving. It strikes the paving, bounces once, then lands on its side and settles without bouncing again. She bends down and picks up the cup.\n\nImage 2 shows armored woman holding a small metal cup; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A3",
+        "target": "hybrid armor adorned with iridescent gemstones",
+        "note": ""
+      },
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "T2",
+        "target": "bounces once",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The woman drinks from a cup and retrieves it after accidentally dropping it.",
+      "A solid-body collision with the stone paving causes the falling metal cup to rebound.",
+      "The dropped metal cup bounces once after striking the courtyard paving, then settles."
+    ],
+    "leftPoster": "posters/0fd7e54725dac0ca.jpg",
+    "rightPoster": "posters/304cd379ae83565e.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0673",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A shorebird hopping on a spring beach",
+    "score": "0/6 → 5/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/686f178e7bf1a293.mp4",
+    "rightVideo": "play/f44515c1c0c70950.mp4",
+    "nativePrompt": "An oil-painted coastal beach in spring, with waves lapping on the sand. A small shorebird in the left third of the frame performs five successive jumps in place, clearly leaving the sand and landing between jumps. Each airborne rise slows before the bird falls back onto the sand under gravity. From a low angle near the sand, the camera tracks in a gentle arc around the bird, keeping it in the left third throughout.",
+    "neurcoPrompt": "An oil-painting-style coastal beach in spring, with waves washing onto the sand and receding. A small shorebird in the left third of the frame performs five jumps in place in this order: jumps once, lands, jumps a second time, lands, jumps a third time, lands, jumps a fourth time, lands, then jumps a fifth time and lands, clearly leaving the sand and landing between jumps. Each airborne rise slows before the bird descends under gravity until it contacts the sand and lands. From a low angle near the sand, the camera tracks in a gentle arc around the bird, keeping it in the left third throughout.\n\nUse Image 1 as the visual style reference for the whole video.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "F1",
+        "target": "oil-painted",
+        "note": ""
+      },
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "T2",
+        "target": "five successive jumps in place",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The shorebird stays in the left third throughout the camera's arc.",
+      "The camera remains near the sand, viewing the bird from below.",
+      "The beach, bird, and waves have an oil-painted appearance.",
+      "Gravity slows the bird's upward movement and brings it back to the sand during each jump."
+    ],
+    "leftPoster": "posters/686f178e7bf1a293.jpg",
+    "rightPoster": "posters/f44515c1c0c70950.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0381",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Underwater confrontation with two hybrid creatures",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/19f73b9fc9601bda.mp4",
+    "rightVideo": "play/79ac201bcda573dd.mp4",
+    "nativePrompt": "Render in anime style, preserving the boy in Image 1 and the red-haired girl in Image 2. In a ruined underwater stone hall with broken stairs and a sandy floor, they confront the mermaid queen alongside the blonde and burgundy-haired heroines. The queen has a human upper body and fish tail, green hair, metallic armor, and a turquoise trident. Beside her waits Kelpie, a horse-bodied creature with a fish tail instead of hind legs. Every face remains stern throughout. The queen swings her trident, forming a pale-blue energy bubble around the four heroes.",
+    "neurcoPrompt": "Render with an anime visual style, preserving the boy in Image 1 and the red-haired girl in Image 2. In a ruined underwater stone hall with broken stairs and a sandy floor, they confront the mermaid queen alongside the blonde and burgundy-haired heroines. The queen has a human upper body and fish tail, green hair, metallic armor, and a turquoise trident. Beside her waits Kelpie, a horse-bodied creature with a fish tail instead of hind legs. Every face holds a stern expression throughout. The queen swings her trident, forming a pale-blue energy bubble around the four heroes.\n\nUse Image 3 as the visual style reference for the whole video.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "F1",
+        "target": "Render in anime style",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "Two hybrid creatures: a human–fish mermaid queen and a horse–fish Kelpie.",
+      "All characters maintain stern facial expressions throughout the confrontation and bubble formation."
+    ],
+    "leftPoster": "posters/19f73b9fc9601bda.jpg",
+    "rightPoster": "posters/79ac201bcda573dd.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0445",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A monkey jumps around an apple",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/6f79b5368f48754d.mp4",
+    "rightVideo": "play/b9ea585baf2b82ca.mp4",
+    "nativePrompt": "A monkey starts behind an apple resting on the ground. It jumps to the viewer's left of the apple and pauses beside it, then jumps to the viewer's right of the apple and stands still there through the end. The apple remains in place.",
+    "neurcoPrompt": "A monkey starts behind an apple resting on the ground, farther from the camera than the apple. It jumps once to the viewer's left of the apple, lands beside the apple on its viewer-left side, and pauses there; then it jumps a second time to the viewer's right of the apple and lands on its viewer-right side and stands still there through the end. The apple remains in place.",
+    "operators": [
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "C2",
+        "target": "A monkey starts behind an apple resting on the ground. It jumps to the viewer's left of the apple and pauses beside it, then jumps to the viewer's right of the apple",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "At the end, the monkey stands still to the viewer's right of the apple.",
+      "The monkey moves from behind the apple to its left, then from its left to its right."
+    ],
+    "leftPoster": "posters/6f79b5368f48754d.jpg",
+    "rightPoster": "posters/b9ea585baf2b82ca.jpg"
+  },
+  {
+    "id": "t2v_k3_r1_0003",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A living popcorn kernel popping into fluffy popcorn",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/c0b3e4263a1c6af5.mp4",
+    "rightVideo": "play/84a7d53bcebb8cbe.mp4",
+    "nativePrompt": "A popcorn kernel is a tiny living creature, with eyes and a mouth embedded in its surface. It pops once into a fluffy piece of popcorn, its face remaining recognizable as its body transforms. It stays in its popped form afterward.",
+    "neurcoPrompt": "A popcorn kernel is a tiny living creature, with eyes and a mouth embedded in its surface. It pops exactly once into a fluffy piece of popcorn, its face remaining recognizable as its body transforms from a tiny popcorn kernel into that fluffy piece of popcorn. It stays in its popped form afterward.",
+    "operators": [
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "T2",
+        "target": "pops once",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The subject is a recognizable popcorn kernel that becomes popcorn.",
+      "The kernel changes once from unpopped to popped and remains popped."
+    ],
+    "leftPoster": "posters/c0b3e4263a1c6af5.jpg",
+    "rightPoster": "posters/84a7d53bcebb8cbe.jpg"
+  },
+  {
+    "id": "t2v_k3_r1_0008",
+    "backend": "Wan",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Contrasting balloon actions",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/c5cd5559a40afa87.mp4",
+    "rightVideo": "play/5904ab120ea78ad8.mp4",
+    "nativePrompt": "A red balloon falls onto the floor and bounces three times, gradually deflating as air escapes. Beside it, a green balloon stays in place and expands as it fills with air. After its third bounce, the red balloon settles on the floor while the green balloon continues expanding.",
+    "neurcoPrompt": "A red balloon falls onto the floor, bounces off it a first time and lands, bounces off it a second time and lands, then bounces off it a third time and lands, gradually becoming smaller as air escapes. Beside it, a green balloon stays in place and gradually grows larger as it fills with air. After its third bounce, the red balloon settles on the floor while the green balloon continues expanding.",
+    "operators": [
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "T2",
+        "target": "bounces three times",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The red balloon deflates while the green balloon expands.",
+      "The red balloon falls onto the floor, bounces three times, then settles."
+    ],
+    "leftPoster": "posters/c5cd5559a40afa87.jpg",
+    "rightPoster": "posters/5904ab120ea78ad8.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0382",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A solemn imperial guard receives a silent command and departs.",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/654e5bef0236fcd0.mp4",
+    "rightVideo": "play/cada2e9d9b410129.mp4",
+    "nativePrompt": "Render the ancient hall in Image 1 photorealistically, with lifelike materials and human skin. The woman in Image 2 stands beside the window, her face turned toward it, her expression stern. The armored man in Image 3 kneels before her with his fists already clasped and his head lowered. He rises to his feet, then pivots clockwise through 90 degrees in place to face the doorway, then walks out of the hall. The woman remains motionless throughout.",
+    "neurcoPrompt": "Render the ancient hall in Image 1 in a photorealistic visual style, with lifelike materials and human skin. The woman in Image 2 stands beside the window, her face turned toward it, her expression is stern. The armored man in Image 3 kneels before her with his fists already clasped and his head lowered. He rises to his feet, then rotates clockwise exactly 90 degrees in place from his initial facing direction until he faces the doorway, then walks step by step out of the hall. The woman remains motionless throughout.\n\nUse Image 4 as the visual style reference for the whole video.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "F1",
+        "target": "photorealistically",
+        "note": ""
+      },
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "P3",
+        "target": "pivots clockwise through 90 degrees in place",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The hall, costumes, armor, and human skin are rendered with a photographic, lifelike appearance.",
+      "After standing, the armored man pivots clockwise 90 degrees in place toward the doorway."
+    ],
+    "leftPoster": "posters/654e5bef0236fcd0.jpg",
+    "rightPoster": "posters/cada2e9d9b410129.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0422",
+    "backend": "Wan",
+    "mode": "R2V (VACE)",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "A girl falls through clouds into a monumental hot spring above a city.",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/6891c8515ff1a618.mp4",
+    "rightVideo": "play/f3101a176793c0ec.mp4",
+    "nativePrompt": "In one continuous shot, begin close to the girl in Image 1 suspended among clouds. The camera steadily pulls out, revealing the misty city and gigantic steaming hot-spring vessel in Image 2 below. At second 1, she begins falling with accelerating downward motion, flailing her limbs. At second 3, she emerges beneath the cloud layer above the vessel. At second 6, she plunges into its water. At second 8, the displaced water rises into a crown-shaped splash, then falls back into the vessel.",
+    "neurcoPrompt": "In one continuous shot, begin close to the girl in Image 1, suspended among clouds. The camera steadily dollies backward from a Close-up shot to a Wide shot, revealing the misty city and gigantic steaming hot-spring vessel in Image 2 below her. At second 1, she begins falling, accelerating downward and flailing her limbs. At second 3, she passes through the cloud layer and emerges beneath it, above the vessel. At second 6, she plunges into its water. At second 8, the water displaced by her plunge rises into a crown-shaped splash, then falls back into the vessel.",
+    "operators": [
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "T1",
+        "target": "At second 1, she begins falling",
+        "note": ""
+      },
+      {
+        "name": "控制视频",
+        "type": "proxy_control",
+        "control": "C2",
+        "target": "she emerges beneath the cloud layer",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "A continuous camera pull out moves from a close view of the girl to a wider view revealing the city and vessel.",
+      "Gravity accelerates the girl's downward fall; fluid displacement produces a splash that rises and falls back."
+    ],
+    "leftPoster": "posters/6891c8515ff1a618.jpg",
+    "rightPoster": "posters/f3101a176793c0ec.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0370",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Sequential camera movement with a shifting focal plane",
+    "score": "1/3 → 3/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/e1a5296f50f821cb.mp4",
+    "rightVideo": "play/4047e54065f21e12.mp4",
+    "nativePrompt": "Begin with a smooth counterclockwise camera roll inside a room; at exactly 4 seconds, finish the roll and smoothly begin dollying forward toward the background doorway. Use one continuous shot with no cuts. Frame a stationary vase prominently in the lower-left foreground and a doorway farther back near the center, with a clear forward camera path toward it. Use soft, natural interior lighting and a simple, entirely stationary background.\n\n0–4 seconds: The vase is sharply focused, while the background doorway remains softly blurred by shallow depth of field. Roll the camera counterclockwise around its optical axis, smoothly easing to a stop at exactly 4 seconds. During this phase, keep the camera position fixed and maintain constant focal length; no dolly, pan, tilt, or zoom.\n\nFrom 4 seconds onward: Keep the completed roll angle fixed and smoothly translate the camera forward toward the doorway, without zooming or introducing further rotation. During this dolly, perform a continuous, gradual focus pull from the foreground vase to the background doorway. The vase progressively loses sharpness as the doorway progressively resolves into clear focus. Show genuine forward-camera parallax and natural perspective changes, not a simulated zoom. Keep part of the vase visible in the foreground through the end. Finish with the doorway sharp and the vase blurred. Preserve continuous camera movement without jumps, frozen frames, or repeated motion. Visual only: no dialogue, audio, captions, subtitles, logos, or added visible text.",
+    "neurcoPrompt": "Begin with a smooth counterclockwise camera roll inside a room; at exactly 4 seconds, finish the roll and smoothly begin dollying forward toward the background doorway. Use one continuous shot with no cuts. Frame a stationary vase prominently in the lower-left foreground and a doorway farther back near the center, with a clear forward camera path toward it. Use soft, natural interior lighting and a simple, entirely stationary background.\n\n0–4 seconds: The vase is sharply focused, while the background doorway remains softly blurred by shallow depth of field. Roll the camera counterclockwise around its optical axis, smoothly easing to a stop at exactly 4 seconds. During this phase, keep the camera position fixed and maintain constant focal length; no dolly, pan, tilt, or zoom.\n\nFrom 4 seconds onward: Keep the completed roll angle fixed and smoothly translate the camera forward toward the doorway, without zooming or introducing further rotation. During this dolly, perform a continuous, gradual focus pull from the foreground vase to the background doorway. The vase progressively loses sharpness as the doorway progressively resolves into clear focus. Show genuine forward-camera parallax and natural perspective changes, not a simulated zoom. Keep part of the vase visible in the foreground through the end. Finish with the doorway sharp and the vase blurred. Preserve continuous camera movement without jumps, frozen frames, or repeated motion. Visual only: no dialogue, audio, captions, subtitles, logos, or added visible text.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "K1",
+        "target": "K1",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "A counterclockwise camera roll followed by a forward dolly.",
+      "The forward dolly begins at second 4."
+    ],
+    "leftPoster": "posters/e1a5296f50f821cb.jpg",
+    "rightPoster": "posters/4047e54065f21e12.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0451",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Ballet turn with gravity-driven fabric movement",
+    "score": "1/3 → 3/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/3d104e3642fb8455.mp4",
+    "rightVideo": "play/3c7c560b1691510d.mp4",
+    "nativePrompt": "A ballet performer executes one controlled 45-degree turn in place, keeping the supporting leg fully extended throughout and the lifted foot beside the supporting knee. Begin with the performer facing the camera, balanced over the straight supporting leg, the other knee bent outward, and both arms open to the sides in ballet second position. The performer smoothly rotates 45 degrees toward screen-right, finishing in a three-quarter orientation—not a full pirouette. The supporting foot pivots without translating: its floor-contact pivot point stays fixed at exactly the same spot on the studio floor. No stepping, hopping, sliding, knee bending, or lowering the lifted foot. Maintain anatomically coherent alignment, with the lifted foot consistently beside the supporting knee throughout the rotation.\n\nDuring this same turn, both arms continuously draw inward from the open position into a rounded ballet first position in front of the torso, with softly curved elbows and separated hands. Complete the arm closure as the body reaches the 45-degree endpoint. As the performer finishes, the dress hem loses its slight rotational displacement, falls downward under gravity, and settles naturally around the legs. Show the fabric's continuous intermediate movement and diminishing residual motion rather than an abrupt change or frozen hem. End with the performer balanced in the completed pose and the hem settled; do not repeat the turn or add another gesture.\n\nUse a single uninterrupted, static, full-body shot in a dance studio with a level wooden floor and a plain, softly lit wall. Keep the performer centered, with the head, arms, supporting foot, lifted foot, and dress hem visible throughout. Frame the dress so the knee and foot positions remain readable. Soft, even studio lighting clearly reveals limb alignment and fabric movement. The background remains entirely stationary, with no other performers or moving elements. No camera movement, zoom, reframing, cuts, looping, frozen frames, anatomical distortion, or limb duplication. The rotation, arm movement, and subsequent fabric settling must visibly progress continuously, with no prolonged pauses. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text.",
+    "neurcoPrompt": "A ballet performer executes one controlled 45-degree turn in place, keeping the supporting leg fully extended throughout and the lifted foot beside the supporting knee. Begin with the performer facing the camera, balanced over the straight supporting leg, the other knee bent outward, and both arms open to the sides in ballet second position. The performer smoothly rotates 45 degrees toward screen-right, finishing in a three-quarter orientation—not a full pirouette. The supporting foot pivots without translating: its floor-contact pivot point stays fixed at exactly the same spot on the studio floor. No stepping, hopping, sliding, knee bending, or lowering the lifted foot. Maintain anatomically coherent alignment, with the lifted foot consistently beside the supporting knee throughout the rotation.\n\nDuring this same turn, both arms continuously draw inward from the open position into a rounded ballet first position in front of the torso, with softly curved elbows and separated hands. Complete the arm closure as the body reaches the 45-degree endpoint. As the performer finishes, the dress hem loses its slight rotational displacement, falls downward under gravity, and settles naturally around the legs. Show the fabric's continuous intermediate movement and diminishing residual motion rather than an abrupt change or frozen hem. End with the performer balanced in the completed pose and the hem settled; do not repeat the turn or add another gesture.\n\nUse a single uninterrupted, static, full-body shot in a dance studio with a level wooden floor and a plain, softly lit wall. Keep the performer centered, with the head, arms, supporting foot, lifted foot, and dress hem visible throughout. Frame the dress so the knee and foot positions remain readable. Soft, even studio lighting clearly reveals limb alignment and fabric movement. The background remains entirely stationary, with no other performers or moving elements. No camera movement, zoom, reframing, cuts, looping, frozen frames, anatomical distortion, or limb duplication. The rotation, arm movement, and subsequent fabric settling must visibly progress continuously, with no prolonged pauses. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "P3",
+        "target": "The performer turns 45 degrees while remaining at the same floor position.",
+        "note": ""
+      },
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T2",
+        "target": "T2",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The performer executes a ballet turn with a raised foot and rounded arms.",
+      "Gravity pulls the dress hem downward until it settles."
+    ],
+    "leftPoster": "posters/3d104e3642fb8455.jpg",
+    "rightPoster": "posters/3c7c560b1691510d.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0766",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "A playful chase during a daily dog outing",
+    "score": "2/6 → 5/6",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/2f33d2b14bfde6f2.mp4",
+    "rightVideo": "play/0d78053b98c07fef.mp4",
+    "nativePrompt": "Exactly one beige-coated person from Image 2 first beckons to exactly one golden curly-haired dog from Image 1; the dog approaches; the person begins jogging rightward across about 60% of the frame width; the dog then chases the jogging person; finally the person sits on exactly one pale wooden bench from Image 4. Include exactly one green-leaved potted plant from Image 3 beside the bench at frame right, and exactly one picnic table from Image 5. Preserve the referenced subjects’ recognizable appearances, clothing, colors, materials, and proportions throughout.\n\nShow their daily outing in one continuous, static wide shot of an urban courtyard surrounded by modern windowed buildings, under natural daylight. Keep the person, dog, bench, plant, and picnic table visible throughout. Place the bench at frame right, with the plant immediately beside it but clear of the seating area and jogging path. Place the picnic table in the left background, outside the action path. Frame enough open courtyard for the complete rightward movement without cropping either subject. No camera movement, zoom, reframing, or cuts.\n\nBeginning: the person stands near 20% of the frame width, facing the dog, which starts farther left and slightly behind in depth. The bench’s seating position is near 80% of the frame width. The person performs one clear beckoning gesture: raising one hand toward the dog, curling it inward in invitation, then lowering it naturally. The dog does not approach until this gesture is completed. Maintain subtle visible breathing and natural weight shifts rather than frozen poses.\n\nNext: the same dog approaches the stationary person with a natural walking gait. Each paw placement produces actual forward body displacement relative to the courtyard paving; no walking in place, sliding, or teleportation. The dog reaches close proximity without colliding with the person.\n\nTransition: only after the dog has approached, the person turns toward screen-right and begins jogging along a clear lateral path parallel to the camera plane, traveling approximately 60% of the full frame width toward the bench. Show alternating footfalls, flexing knees, coordinated arm swings, and physically grounded weight transfer. After the person has visibly begun jogging, the dog accelerates into a chase behind them, using a natural canine running gait with coordinated leg extension and retraction. Both bodies visibly translate rightward against the stationary buildings; neither approaches the lens. The dog follows without overtaking, touching, or merging with the person. Keep the golden curls, canine anatomy, beige coat, and human anatomy stable, with no morphing, duplicated limbs, or identity changes.\n\nEnd: the person reaches the bench, decelerates naturally, turns into a seated position, bends knees and hips, and lowers their weight until supported by the pale wooden seat. Sitting occurs only after the rightward jog and the dog’s chase are clearly shown. The dog’s chase slows as the person reaches the bench, remaining nearby on the courtyard paving without jumping onto the bench. End with the person seated and the plant still beside the bench at frame right.\n\nAllow enough uninterrupted screen time for every stage to visibly begin and finish in the specified order. Maintain continuous, non-looping action and natural motion through every phase, without frozen frames, skipped stages, or abrupt position changes. All furniture, the plant, and the architectural background remain stationary. Keep hands, paws, feet, and seating contact anatomically coherent and physically grounded. No extra people, animals, objects, dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly one referenced person, one referenced dog, one referenced potted plant, one referenced bench, and one referenced picnic table from beginning to end.",
+    "neurcoPrompt": "Exactly one beige-coated person from Image 2 first beckons to exactly one golden curly-haired dog from Image 1; the dog approaches; the person begins jogging rightward across about 60% of the frame width; the dog then chases the jogging person; finally the person sits on exactly one pale wooden bench from Image 4. Include exactly one green-leaved potted plant from Image 3 beside the bench at frame right, and exactly one picnic table from Image 5. Preserve the referenced subjects’ recognizable appearances, clothing, colors, materials, and proportions throughout.\n\nShow their daily outing in one continuous, static wide shot of an urban courtyard surrounded by modern windowed buildings, under natural daylight. Keep the person, dog, bench, plant, and picnic table visible throughout. Place the bench at frame right, with the plant immediately beside it but clear of the seating area and jogging path. Place the picnic table in the left background, outside the action path. Frame enough open courtyard for the complete rightward movement without cropping either subject. No camera movement, zoom, reframing, or cuts.\n\nBeginning: the person stands near 20% of the frame width, facing the dog, which starts farther left and slightly behind in depth. The bench’s seating position is near 80% of the frame width. The person performs one clear beckoning gesture: raising one hand toward the dog, curling it inward in invitation, then lowering it naturally. The dog does not approach until this gesture is completed. Maintain subtle visible breathing and natural weight shifts rather than frozen poses.\n\nNext: the same dog approaches the stationary person with a natural walking gait. Each paw placement produces actual forward body displacement relative to the courtyard paving; no walking in place, sliding, or teleportation. The dog reaches close proximity without colliding with the person.\n\nTransition: only after the dog has approached, the person turns toward screen-right and begins jogging along a clear lateral path parallel to the camera plane, traveling approximately 60% of the full frame width toward the bench. Show alternating footfalls, flexing knees, coordinated arm swings, and physically grounded weight transfer. After the person has visibly begun jogging, the dog accelerates into a chase behind them, using a natural canine running gait with coordinated leg extension and retraction. Both bodies visibly translate rightward against the stationary buildings; neither approaches the lens. The dog follows without overtaking, touching, or merging with the person. Keep the golden curls, canine anatomy, beige coat, and human anatomy stable, with no morphing, duplicated limbs, or identity changes.\n\nEnd: the person reaches the bench, decelerates naturally, turns into a seated position, bends knees and hips, and lowers their weight until supported by the pale wooden seat. Sitting occurs only after the rightward jog and the dog’s chase are clearly shown. The dog’s chase slows as the person reaches the bench, remaining nearby on the courtyard paving without jumping onto the bench. End with the person seated and the plant still beside the bench at frame right.\n\nAllow enough uninterrupted screen time for every stage to visibly begin and finish in the specified order. Maintain continuous, non-looping action and natural motion through every phase, without frozen frames, skipped stages, or abrupt position changes. All furniture, the plant, and the architectural background remain stationary. Keep hands, paws, feet, and seating contact anatomically coherent and physically grounded. No extra people, animals, objects, dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly one referenced person, one referenced dog, one referenced potted plant, one referenced bench, and one referenced picnic table from beginning to end.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "P2",
+        "target": "The person jogs rightward across about 60% of the frame width toward the bench.",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The person beckons, the dog approaches, the person begins jogging, the dog begins chasing, and the person sits on the bench, in that order.",
+      "The person leads by jogging while the dog follows by chasing.",
+      "The dog chases the person as the person jogs through the courtyard."
+    ],
+    "leftPoster": "posters/2f33d2b14bfde6f2.jpg",
+    "rightPoster": "posters/0d78053b98c07fef.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0713",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "A street chase",
+    "score": "2/6 → 5/6",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/bd21c607b97d7b5b.mp4",
+    "rightVideo": "play/50dbf952565071d1.mp4",
+    "nativePrompt": "Exactly three runners occupy the scene: a foreground runner wearing a red jacket, chased by two background runners, one wearing a blue jacket and the other a yellow jacket. They run continuously along a street; at precisely 1 second, the red-jacketed runner performs exactly one jump, lands, and continues running while both pursuers keep running behind.\n\nRender a single continuous 6-second shot. Initially, the red-jacketed runner is nearest the camera, in the foreground, with the blue- and yellow-jacketed pursuers farther back along the same route and separately visible. Keep their jacket colors, identities, anatomy, and relative depth order consistent throughout. Use an ordinary paved street in natural daylight, with static building facades and no additional people, vehicles, or moving background elements.\n\n0–1 seconds: begin immediately with the camera trucking right along the street, showing the runners from an oblique side angle as they travel rightward. Their bodies visibly advance relative to the pavement and buildings; each alternating footfall produces forward displacement, with natural knee flexion, arm counter-swing, and weight transfer. No running in place, sliding, or movement toward the lens in this opening lateral view.\n\nAt 1 second: the same red-jacketed runner pushes off the pavement into one forward-moving jump. Show the legs extending at takeoff, both feet briefly clearing the ground, and a physically plausible descending arc. By approximately 1.6 seconds, the runner lands with bent knees absorbing the impact and immediately resumes alternating running strides without stopping. The blue- and yellow-jacketed runners remain behind and do not jump. No second jump.\n\n1.6–3 seconds: continue trucking right as the chase progresses. Maintain the red jacket in foreground focus and the two pursuers softer in the background.\n\n3–6 seconds: midway through the shot, smoothly bring the rightward truck to a stop, then pan right from the stationary camera position until the camera faces front-right along the street. Do not continue translating during the pan. During this same pan, smoothly pull focus from the foreground red-jacketed runner to the background blue- and yellow-jacketed pursuers: the red runner gradually softens while both pursuers become sharp. Finish facing front-right with the pursuers in focus, the red runner still nearest the camera, and all three still running in their original chase order.\n\nKeep all runners visible within the composition throughout. No cuts, zoom, push-in, pull-out, frozen frames, looping, anatomical distortion, identity switching, or unrequested actions. Motion must visibly progress in every frame. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly three runners throughout: one red-jacketed leader, one blue-jacketed pursuer, and one yellow-jacketed pursuer.",
+    "neurcoPrompt": "Exactly three runners occupy the scene: a foreground runner wearing a red jacket, chased by two background runners, one wearing a blue jacket and the other a yellow jacket. They run continuously along a street; at precisely 1 second, the red-jacketed runner performs exactly one jump, lands, and continues running while both pursuers keep running behind.\n\nRender a single continuous 6-second shot. Initially, the red-jacketed runner is nearest the camera, in the foreground, with the blue- and yellow-jacketed pursuers farther back along the same route and separately visible. Keep their jacket colors, identities, anatomy, and relative depth order consistent throughout. Use an ordinary paved street in natural daylight, with static building facades and no additional people, vehicles, or moving background elements.\n\n0–1 seconds: begin immediately with the camera trucking right along the street, showing the runners from an oblique side angle as they travel rightward. Their bodies visibly advance relative to the pavement and buildings; each alternating footfall produces forward displacement, with natural knee flexion, arm counter-swing, and weight transfer. No running in place, sliding, or movement toward the lens in this opening lateral view.\n\nAt 1 second: the same red-jacketed runner pushes off the pavement into one forward-moving jump. Show the legs extending at takeoff, both feet briefly clearing the ground, and a physically plausible descending arc. By approximately 1.6 seconds, the runner lands with bent knees absorbing the impact and immediately resumes alternating running strides without stopping. The blue- and yellow-jacketed runners remain behind and do not jump. No second jump.\n\n1.6–3 seconds: continue trucking right as the chase progresses. Maintain the red jacket in foreground focus and the two pursuers softer in the background.\n\n3–6 seconds: midway through the shot, smoothly bring the rightward truck to a stop, then pan right from the stationary camera position until the camera faces front-right along the street. Do not continue translating during the pan. During this same pan, smoothly pull focus from the foreground red-jacketed runner to the background blue- and yellow-jacketed pursuers: the red runner gradually softens while both pursuers become sharp. Finish facing front-right with the pursuers in focus, the red runner still nearest the camera, and all three still running in their original chase order.\n\nKeep all runners visible within the composition throughout. No cuts, zoom, push-in, pull-out, frozen frames, looping, anatomical distortion, identity switching, or unrequested actions. Motion must visibly progress in every frame. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly three runners throughout: one red-jacketed leader, one blue-jacketed pursuer, and one yellow-jacketed pursuer.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T2",
+        "target": "T2",
+        "note": ""
+      },
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T1",
+        "target": "T1",
+        "note": ""
+      },
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "K1",
+        "target": "K1",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "Focus shifts from the nearby red-jacketed runner to the more distant pursuers.",
+      "The red-jacketed runner performs one jump, lands, and resumes running.",
+      "The red-jacketed runner begins a jump at second 1."
+    ],
+    "leftPoster": "posters/bd21c607b97d7b5b.jpg",
+    "rightPoster": "posters/50dbf952565071d1.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0691",
+    "backend": "H3",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Two people sharing wine",
+    "score": "4/6 → 6/6",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/89b5c253fc581509.mp4",
+    "rightVideo": "play/9264512f9177dbce.mp4",
+    "nativePrompt": "Exactly two people sit across a table from each other: the person on screen-left pushes a glass toward the recipient on screen-right, who pulls it closer and gently swirls it until its layered contents become uniformly pink. Show this as one continuous shot with the same two people and the same glass throughout.\n\nInitially, both people are seated and visible, with the glass resting on the tabletop near the screen-left person. The transparent glass clearly contains red wine beneath a distinct pale layer of water. Use an uncluttered setting and soft, neutral lighting that makes the liquid layers, hands, and glass easy to see.\n\nBeginning: the screen-left person places their hand against the glass and smoothly pushes it rightward across the tabletop toward the recipient. The glass visibly translates relative to the table rather than moving in place. It remains upright, its base supported by the tabletop, and the two liquid layers remain visibly distinguishable during this initial slide, with only slight surface movement. The camera pans right following the sliding glass; do not substitute a lateral camera track for this pan.\n\nTransition: the recipient takes hold of the glass and pulls it farther right, closer to their seated position. The first person releases it as the recipient assumes control, with no floating, teleportation, or discontinuous handoff. The camera then tilts down toward the recipient’s hand while retaining both people within the composition.\n\nResult: the recipient gently swirls the glass through small, continuous circular movements, keeping its base in contact with the tabletop and maintaining a secure grip. The liquid rotates inside the glass; red wisps gradually spread upward through the pale water, the boundary softens, and the contents progressively blend. The camera then pushes in toward the swirling glass, without an optical zoom, using a sufficiently wide composition to keep both seated people visible. Only at the end does the liquid become uniformly pink, with no remaining separate layers and no spill.\n\nPreserve the ordered camera movements: rightward pan, then downward tilt, then forward push-in. Keep the action visibly progressing without frozen frames, repeated footage, abrupt jumps, or cuts. Hands remain anatomically coherent, the glass remains intact, and liquid volume stays consistent. Keep the background stationary and free of other people or competing activity. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain and verify the same identities and exact count at the beginning, middle, and end: exactly two people.",
+    "neurcoPrompt": "Exactly two people sit across a table from each other: the person on screen-left pushes a glass toward the recipient on screen-right, who pulls it closer and gently swirls it until its layered contents become uniformly pink. Show this as one continuous shot with the same two people and the same glass throughout.\n\nInitially, both people are seated and visible, with the glass resting on the tabletop near the screen-left person. The transparent glass clearly contains red wine beneath a distinct pale layer of water. Use an uncluttered setting and soft, neutral lighting that makes the liquid layers, hands, and glass easy to see.\n\nBeginning: the screen-left person places their hand against the glass and smoothly pushes it rightward across the tabletop toward the recipient. The glass visibly translates relative to the table rather than moving in place. It remains upright, its base supported by the tabletop, and the two liquid layers remain visibly distinguishable during this initial slide, with only slight surface movement. The camera pans right following the sliding glass; do not substitute a lateral camera track for this pan.\n\nTransition: the recipient takes hold of the glass and pulls it farther right, closer to their seated position. The first person releases it as the recipient assumes control, with no floating, teleportation, or discontinuous handoff. The camera then tilts down toward the recipient’s hand while retaining both people within the composition.\n\nResult: the recipient gently swirls the glass through small, continuous circular movements, keeping its base in contact with the tabletop and maintaining a secure grip. The liquid rotates inside the glass; red wisps gradually spread upward through the pale water, the boundary softens, and the contents progressively blend. The camera then pushes in toward the swirling glass, without an optical zoom, using a sufficiently wide composition to keep both seated people visible. Only at the end does the liquid become uniformly pink, with no remaining separate layers and no spill.\n\nPreserve the ordered camera movements: rightward pan, then downward tilt, then forward push-in. Keep the action visibly progressing without frozen frames, repeated footage, abrupt jumps, or cuts. Hands remain anatomically coherent, the glass remains intact, and liquid volume stays consistent. Keep the background stationary and free of other people or competing activity. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain and verify the same identities and exact count at the beginning, middle, and end: exactly two people.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "K1",
+        "target": "K1",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "The camera pans right, then tilts down, then pushes in.",
+      "Swirling blends the red wine and pale water layers into a uniform pink liquid."
+    ],
+    "leftPoster": "posters/89b5c253fc581509.jpg",
+    "rightPoster": "posters/9264512f9177dbce.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0489",
+    "backend": "H3",
+    "mode": "R2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Two dancers jumping together against a yellow backdrop",
+    "score": "2/3 → 3/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/12c3a80ae2a0d24f.mp4",
+    "rightVideo": "play/d850e21d3d58b760.mp4",
+    "nativePrompt": "Exactly two dancers appear throughout: the woman from Image 1 and the man from Image 2. They perform five synchronized jumps in place, visibly leaving the floor and landing after every jump, then remain standing after the fifth landing. Preserve each person's recognizable face, hairstyle, body proportions, and appearance from their respective reference image; do not substitute generic people or swap their identities.\n\nBegin with the woman at screen-left and the man at screen-right, standing side by side, facing forward, with both feet planted on the floor. The man wears a red-and-black plaid shirt over a white T-shirt. The woman wears a green button-up shirt over a white top. Use a bright yellow seamless backdrop and matching floor, with even lighting and subtle contact shadows beneath their feet. Leave sufficient space between their bodies to keep their silhouettes distinct, and enough headroom for every jump.\n\nShow five complete, consecutive jump cycles in this exact order: jump one and land; jump two and land; jump three and land; jump four and land; jump five and land. For each cycle, both dancers bend their knees together, push against the floor, rise vertically with both feet clearly airborne at the same time, descend naturally under gravity, and land together on both feet with visible knee flexion absorbing the impact. Each landing must finish before the next takeoff begins. Keep their movement playful, coordinated, and anatomically natural, with modest balancing arm movements. Their bodies visibly rise and fall relative to the fixed backdrop; no stepping, traveling sideways, walking in place, hovering, or simulated jumps with feet remaining on the floor. Clothing responds naturally to takeoff and landing while retaining its colors and patterns. Show all five cycles as continuous newly progressing motion, not recycled footage or a loop, with no skipped landings or extra jumps.\n\nAfter the fifth landing, both straighten into a relaxed standing posture facing forward and remain in their original side-by-side positions. Clearly visible gentle breathing continues during this final standing moment; no further dance moves occur.\n\nUse one continuous shot with a completely static, front-facing camera. Keep both dancers' entire bodies and feet visible in every frame, including at the highest point of every jump. No cuts, pans, tilts, zooms, camera translation, or reframing. Keep the yellow background entirely stationary and empty. No dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain stable anatomy, faces, outfits, and separate body outlines without flickering, morphing, duplication, or additional people: exactly the same two dancers, the woman from Image 1 and the man from Image 2, from beginning to end.",
+    "neurcoPrompt": "Exactly two dancers appear throughout: the woman from Image 1 and the man from Image 2. They perform five synchronized jumps in place, visibly leaving the floor and landing after every jump, then remain standing after the fifth landing. Preserve each person's recognizable face, hairstyle, body proportions, and appearance from their respective reference image; do not substitute generic people or swap their identities.\n\nBegin with the woman at screen-left and the man at screen-right, standing side by side, facing forward, with both feet planted on the floor. The man wears a red-and-black plaid shirt over a white T-shirt. The woman wears a green button-up shirt over a white top. Use a bright yellow seamless backdrop and matching floor, with even lighting and subtle contact shadows beneath their feet. Leave sufficient space between their bodies to keep their silhouettes distinct, and enough headroom for every jump.\n\nShow five complete, consecutive jump cycles in this exact order: jump one and land; jump two and land; jump three and land; jump four and land; jump five and land. For each cycle, both dancers bend their knees together, push against the floor, rise vertically with both feet clearly airborne at the same time, descend naturally under gravity, and land together on both feet with visible knee flexion absorbing the impact. Each landing must finish before the next takeoff begins. Keep their movement playful, coordinated, and anatomically natural, with modest balancing arm movements. Their bodies visibly rise and fall relative to the fixed backdrop; no stepping, traveling sideways, walking in place, hovering, or simulated jumps with feet remaining on the floor. Clothing responds naturally to takeoff and landing while retaining its colors and patterns. Show all five cycles as continuous newly progressing motion, not recycled footage or a loop, with no skipped landings or extra jumps.\n\nAfter the fifth landing, both straighten into a relaxed standing posture facing forward and remain in their original side-by-side positions. Clearly visible gentle breathing continues during this final standing moment; no further dance moves occur.\n\nUse one continuous shot with a completely static, front-facing camera. Keep both dancers' entire bodies and feet visible in every frame, including at the highest point of every jump. No cuts, pans, tilts, zooms, camera translation, or reframing. Keep the yellow background entirely stationary and empty. No dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain stable anatomy, faces, outfits, and separate body outlines without flickering, morphing, duplication, or additional people: exactly the same two dancers, the woman from Image 1 and the man from Image 2, from beginning to end.\n\n<Video 1> is a gray clay proxy animation used only as a motion reference: follow its object positions, movements, number of repetitions, rotation, timing and camera movement exactly, but render the scene photorealistically as described above. Do not copy its gray, untextured look.",
+    "operators": [
+      {
+        "name": "参考视频",
+        "type": "proxy_ref",
+        "control": "T2",
+        "target": "T2",
+        "note": ""
+      }
+    ],
+    "improved": [
+      "Each dancer performs five jumps, taking off and landing together."
+    ],
+    "leftPoster": "posters/12c3a80ae2a0d24f.jpg",
+    "rightPoster": "posters/d850e21d3d58b760.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0481",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Backward skating beside boiling water",
+    "score": "0/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/b292d768557dc739.mp4",
+    "rightVideo": "play/23b176ccdcbd746b.mp4",
+    "nativePrompt": "One seasoned ice skater glides backward across the rink, gently veering right. Beside the rink, an open electric kettle remains visible in the foreground. Its water begins still, then reaches a rolling boil, with vigorous bubbles breaking the surface and steam rising, while the skater continues gliding behind it.",
+    "neurcoPrompt": "One seasoned ice skater glides backward across the rink with the skate blades sliding along the ice, the skater’s back leading the travel and the skater’s chest facing opposite the direction of travel, gently veering right. Beside the rink, an open electric kettle remains visible in the foreground. Its water begins still, then reaches a rolling boil, with vigorous bubbles breaking the surface and steam rising, while the skater continues gliding behind it.",
+    "operators": [],
+    "leftPoster": "posters/b292d768557dc739.jpg",
+    "rightPoster": "posters/23b176ccdcbd746b.jpg"
+  },
+  {
+    "id": "i2v_k3_r0_0425",
+    "backend": "Seedance 2.5",
+    "mode": "I2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A falling water droplet rebounds from a flexible wet leaf",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/be3e2546d5832862.mp4",
+    "rightVideo": "play/fc6b6c2b5a730085.mp4",
+    "nativePrompt": "Continue the close-up of droplet-covered green leaves on reddish stems. A water droplet detaches from an upper leaf and falls onto a leaf below. It rebounds once, visibly clearing the surface, then lands again and stays attached. The receiving leaf bends downward under the impact and gently returns toward its original position. Keep the droplet’s rebound and the leaf’s flexing clearly visible.",
+    "neurcoPrompt": "Continue the close-up of droplet-covered green leaves on reddish stems. A water droplet detaches from an upper leaf and falls downward under gravity onto the surface of a leaf below, colliding with that surface. The same droplet rebounds upward from the receiving leaf exactly once, visibly clearing the surface, then lands again and stays attached. The receiving leaf flexes downward under the force of the droplet’s impact, visibly bending rather than translating as a rigid object, then gently unbends toward its original position. Keep the droplet’s rebound and the leaf’s flexing clearly visible.",
+    "operators": [],
+    "leftPoster": "posters/be3e2546d5832862.jpg",
+    "rightPoster": "posters/fc6b6c2b5a730085.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0447",
+    "backend": "Seedance 2.5",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "Cooking vegetables in a wok",
+    "score": "1/3 → 3/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/cf4e9dbc1bab365d.mp4",
+    "rightVideo": "play/13568560f800b23f.mp4",
+    "nativePrompt": "In a kitchen, a cook works over the heated wok and gas burner in Image 2, with red and yellow bell pepper strips and onions inside. First, the cook presses a softened pepper strip with a long-handled spoon, visibly bending it without breaking it. Next, the cook tilts the uncapped bottle in Image 1, pouring its golden liquid into the wok in a continuous stream. Finally, the cook tilts the uncapped bottle in Image 3, pouring its dark sauce into the wok in a continuous stream.",
+    "neurcoPrompt": "In a kitchen, a cook works over the heated wok and gas burner in Image 2, with red and yellow bell pepper strips and onions inside. First, the cook presses a softened pepper strip with a long-handled spoon, visibly bending it without breaking it. Next, the cook tilts the uncapped bottle in Image 1, pouring its golden liquid from the open bottle mouth downward into the wok under gravity as one unbroken stream throughout the pour; the liquid strikes the contents inside the wok and spreads over them on contact. Finally, the cook tilts the uncapped bottle in Image 3, pouring its dark sauce from the open bottle mouth downward into the wok under gravity as one unbroken stream throughout the pour; the sauce strikes the contents inside the wok and spreads over them on contact.",
+    "operators": [],
+    "leftPoster": "posters/cf4e9dbc1bab365d.jpg",
+    "rightPoster": "posters/13568560f800b23f.jpg"
+  },
+  {
+    "id": "t2v_k3_r1_0004",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A dog rapidly descends a steep embankment and retreats into the background.",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/4eda2863276de975.mp4",
+    "rightVideo": "play/08ac8ce7ea043c7a.mp4",
+    "nativePrompt": "A dog drops swiftly down a steep embankment, drifting slightly left. After landing, it bounces three times down the slope in rapid succession, visibly leaving the ground between contacts. After the third bounce, it regains its footing and scurries quickly farther into the background.",
+    "neurcoPrompt": "A dog drops swiftly down a steep embankment, drifting slightly left. After landing, it bounces exactly three times—rebounding from the slope into the air and landing back on the slope for the first bounce, rebounding into the air and landing for the second bounce, then rebounding into the air and landing for the third bounce—down the slope in rapid succession, visibly leaving the ground between contacts. After the third bounce, it regains its footing and scurries quickly farther into the background.",
+    "operators": [],
+    "leftPoster": "posters/4eda2863276de975.jpg",
+    "rightPoster": "posters/08ac8ce7ea043c7a.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0756",
+    "backend": "Seedance 2.5",
+    "mode": "R2V",
+    "method": "text",
+    "methodLabel": "NeurCo · Text",
+    "topic": "A living topiary shoe becomes a satin shoe",
+    "score": "1/6 → 4/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text",
+    "leftVideo": "play/86731b6bf7475e1d.mp4",
+    "rightVideo": "play/ea2c2da69e0e924a.mp4",
+    "nativePrompt": "Among the flowers beneath pink clouds, the green shoe-shaped plant in Image 1 is a living plant creature, with two small eyes nestled in its moss, resting on the pedestal. In slow motion, three moments unfold in sequence: the girl carefully closes her scissors to trim one tuft; the severed tuft falls onto the pedestal; then the creature transforms into the pale pink satin shoe in Image 2. Its eyes merge into the surface as its green covering becomes pale pink satin, leaving the finished shoe standing steadily.",
+    "neurcoPrompt": "Among the flowers beneath pink clouds, the green shoe-shaped plant in Image 1 is a living plant creature, with two small eyes nestled in its moss, resting on the pedestal. In slow motion throughout all three moments, with each movement progressing continuously at a visibly slower-than-normal speed, three moments unfold in sequence: the girl carefully closes her scissors to trim one tuft; the severed tuft, detached from the plant creature, falls downward under gravity until it strikes the pedestal’s surface and comes to rest on that surface; then the creature transforms into the pale pink satin shoe in Image 2. Its eyes merge into the surface as its green covering becomes pale pink satin, leaving the finished shoe standing steadily.",
+    "operators": [],
+    "leftPoster": "posters/86731b6bf7475e1d.jpg",
+    "rightPoster": "posters/ea2c2da69e0e924a.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0449",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Pink gel pen writing on rough fabric",
+    "score": "0/3 → 2/3",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/b02484dbf0b4d89f.mp4",
+    "rightVideo": "play/d6129fdf77a79e5d.mp4",
+    "nativePrompt": "A single pink gel pen bumps tip-first against rough, textured fabric, briefly indenting it, then drags across the fibers to write the final word of a handwritten sentence. Pink marks remain behind the moving tip. The completed sentence is clearly readable: \"Pink ink flows across the rough fabric as the pen traces a fine line, leaving a bright lasting mark.\"",
+    "neurcoPrompt": "A single pink gel pen bumps once tip-first against rough, textured fabric, with the tip’s impact pressing the fabric inward at the contact point to produce a brief, visible indentation, then drags its tip across the fibers while maintaining contact, tracing the letters of the final word, “mark,” in order from left to right to complete the handwritten sentence. Pink marks remain behind the moving tip. The completed sentence is clearly readable: \"Pink ink flows across the rough fabric as the pen traces a fine line, leaving a bright lasting mark.\" Render this exact 100-character sentence, including its spaces, comma, and final period but excluding the quotation marks, as pink handwriting on the rough fabric.",
+    "operators": [
+      {
+        "name": "首帧",
+        "type": "first_frame",
+        "control": "P7",
+        "target": "Pink ink flows across the rough fabric as the pen traces a fine line, leaving a bright lasting mark."
+      }
+    ],
+    "leftPoster": "posters/b02484dbf0b4d89f.jpg",
+    "rightPoster": "posters/d6129fdf77a79e5d.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0675",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Fire hydrant and stop sign",
+    "score": "3/6 → 5/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/0e0df4b786f300c7.mp4",
+    "rightVideo": "play/a415a3624e795825.mp4",
+    "nativePrompt": "A fire hydrant stands beside a stop sign in golden-hour sunlight. Frame both from a low angle, looking upward. Slowly push toward the hydrant, increasing its height from about 20% to about 30% of the frame while keeping the sign visible. The sign’s red face begins blank. At second 1, its lettering appears and remains clearly readable: \"STOP. Keep this fire hydrant clear at all times. Leave space for emergency crews to reach it safely.\"",
+    "neurcoPrompt": "A fire hydrant stands beside a stop sign in golden-hour sunlight. Frame both from a low angle, looking upward. Slowly push toward the hydrant, increasing its height from about 20% to about 30% of the frame while keeping the sign visible. The sign’s red face begins blank. At second 1, its lettering appears and remains clearly readable: \"STOP. Keep this fire hydrant clear at all times. Leave space so emergency crews can reach it safely.\"",
+    "operators": [
+      {
+        "name": "首帧",
+        "type": "first_frame",
+        "control": "P7",
+        "target": "STOP. Keep this fire hydrant clear at all times. Leave space for emergency crews to reach it safely."
+      }
+    ],
+    "leftPoster": "posters/0e0df4b786f300c7.jpg",
+    "rightPoster": "posters/a415a3624e795825.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0700",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Rapid three-color paint mixing",
+    "score": "4/6 → 6/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/eac8e33098c7d8a6.mp4",
+    "rightVideo": "play/23698145e5619de3.mp4",
+    "nativePrompt": "A red cup holds red paint, a purple cup holds purple paint, and a yellow cup holds yellow paint, all in equal amounts. First, the three cups rapidly pour their paint into a mixing bowl, leaving separate colored streaks. Then a spoon vigorously stirs the mixture at a fast pace until the streaks merge into one uniform blended color.",
+    "neurcoPrompt": "A red cup holds red paint, a purple cup holds purple paint, and a yellow cup holds yellow paint, all in equal amounts. First, the three cups—exactly one red cup, one purple cup, and one yellow cup—rapidly tilt with their open rims pointing downward above a mixing bowl, pouring their respective paints over their rims in streams that fall under gravity into the bowl, leaving separate colored streaks. Then a spoon vigorously stirs the mixture by moving its submerged bowl continuously in circles through the paint, pushing the paint around the mixing bowl at a fast pace until the streaks merge into one uniform blended color.",
+    "operators": [
+      {
+        "name": "首帧",
+        "type": "first_frame",
+        "control": "P1",
+        "target": "three cups"
+      }
+    ],
+    "leftPoster": "posters/eac8e33098c7d8a6.jpg",
+    "rightPoster": "posters/23698145e5619de3.jpg"
+  },
+  {
+    "id": "r2v_k6_r0_0750",
+    "backend": "Seedance 2.5",
+    "mode": "R2V",
+    "method": "operator",
+    "methodLabel": "NeurCo · Text+Operator",
+    "topic": "Underwater confrontation with a mermaid queen",
+    "score": "4/6 → 5/6",
+    "leftLabel": "Native",
+    "rightLabel": "NeurCo · Text+Op",
+    "leftVideo": "play/a4b3650d6ba78304.mp4",
+    "rightVideo": "play/7990061520a6e1ec.mp4",
+    "nativePrompt": "Anime in underwater stone ruins. The boy in Image 1 has blue hair and eagle wings; the girl in Image 2 has red buns. The blonde girl wears purple armor; the burgundy-haired girl wears a cactus shirt. The mermaid queen has pale-gray skin, grass-green hair, a teal helmet, a green forehead jewel, teal armor, and a fish tail. First, she thrusts her trident. The boy parries with his wings. The red-haired girl punches the queen. The queen swings her trident, trapping all four heroes inside a pale-blue energy bubble. Finally, all four strike the bubble together.",
+    "neurcoPrompt": "Anime in underwater stone ruins. The boy in Image 1 has blue hair and eagle wings; the girl in Image 2 has red buns. The blonde girl wears purple armor; the burgundy-haired girl wears a cactus shirt. The same mermaid queen visibly has all six attributes together: pale-gray skin; grass-green hair; a teal helmet worn on her head; a green jewel positioned on her forehead; teal armor worn on her torso; and a fish tail forming her lower body. First, she thrusts her trident. The boy parries with his wings. The red-haired girl punches the queen. The queen swings her trident, trapping all four heroes inside a pale-blue energy bubble. Finally, all four strike the bubble together.\n\nImage 3 shows Mermaid queen appearance reference; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A3",
+        "target": "The mermaid queen has pale-gray skin, grass-green hair, a teal helmet, a green forehead jewel, teal armor, and a fish tail"
+      }
+    ],
+    "leftPoster": "posters/a4b3650d6ba78304.jpg",
+    "rightPoster": "posters/7990061520a6e1ec.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0385",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "A greyhound walking while a dragonfly settles on a leaf",
+    "score": "0/3 → 2/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/c873f8b6dd7c19b2.mp4",
+    "rightVideo": "play/65145c0b839da674.mp4",
+    "nativePrompt": "Exactly one sleek, long-bodied greyhound walks steadily into a starting box and continues padding forward inside, while exactly one swift dragonfly flits to a leaf, lands, and then remains perfectly motionless. Show both animals continuously in one uninterrupted shot.\n\nBeginning: the greyhound stands immediately outside the starting-box entrance, facing screen-right, and begins advancing into it with a natural four-beat walking gait. Its paws lift, swing forward, and make weight-bearing contact with the ground; each step moves its body forward relative to the stationary surroundings. No walking in place, sliding, running, or stopping at the entrance. Simultaneously, the dragonfly flies swiftly along a short, clearly visible path toward a leaf in the foreground, using rapid wingbeats while maintaining a coherent body and four distinct wings.\n\nTransition: the same greyhound crosses the entrance and continues walking deeper inside the box without pausing or changing direction. The dragonfly slows near the leaf, extends its legs, makes contact with the leaf surface, and settles its weight onto its feet. Its wings stop beating as it completes its landing.\n\nEnd: the greyhound remains visibly padding forward inside the starting box through the final frame; allow sufficient interior length for this uninterrupted movement. The dragonfly stays perched on the leaf, perfectly motionless after landing, with no wing flutter, leg adjustments, body movement, or takeoff.\n\nUse a locked, side-on, deep-focus composition: the starting box occupies the middle ground, with its entrance on the left and its interior extending rightward; the leaf and dragonfly occupy a separate foreground area without obscuring the dog. The box has a visibly open mesh side that keeps the greyhound’s entire body readable outside and inside. Keep both animals fully within frame throughout. No pan, tilt, zoom, cuts, or reframing. Use natural daylight and a simple, stationary outdoor ground and background, with no additional animals, people, or moving background elements.\n\nPreserve the greyhound’s elongated slender build, deep chest, tucked waist, long legs, narrow head, and unchanged short coat throughout; it must be a full-bodied greyhound, not a smaller whippet or a costumed human. Preserve the dragonfly’s elongated body, large eyes, and two pairs of outspread wings; do not substitute a damselfly with wings folded together above its body. No morphing, flickering, duplication, disappearance, or anatomical distortion. The dog’s forward motion must visibly progress without frozen frames or repeating footage, while the landed dragonfly remains absolutely still. Visual only: no audio, dialogue, captions, logos, or visible text. Maintain exactly one greyhound and exactly one dragonfly from beginning to end.",
+    "neurcoPrompt": "Exactly one sleek, long-bodied greyhound walks steadily forward into a starting box through its left entrance, facing screen-right and using a natural four-beat walking gait in which each paw lifts, swings forward, and plants on the ground in a weight-bearing step that advances the dog's body rightward through the entrance, and continues padding forward inside, while exactly one swift dragonfly flits to a leaf, lands, and then remains perfectly motionless. Show both animals continuously in one uninterrupted shot.\n\nBeginning: the greyhound stands immediately outside the starting-box entrance, facing screen-right, and begins advancing into it with a natural four-beat walking gait. Its paws lift, swing forward, and make weight-bearing contact with the ground; each step moves its body forward relative to the stationary surroundings. No walking in place, sliding, running, or stopping at the entrance. Simultaneously, the dragonfly flies swiftly along a short, clearly visible path toward a leaf in the foreground, using rapid wingbeats while maintaining a coherent body and four distinct wings.\n\nTransition: the same greyhound crosses the entrance and continues walking deeper inside the box without pausing or changing direction. The dragonfly slows near the leaf, extends its legs, makes contact with the leaf surface, and settles its weight onto its feet. Its wings stop beating as it completes its landing.\n\nEnd: the greyhound remains visibly padding forward inside the starting box through the final frame; allow sufficient interior length for this uninterrupted movement. The dragonfly stays perched on the leaf, perfectly motionless after landing, with no wing flutter, leg adjustments, body movement, or takeoff.\n\nUse a locked, side-on, deep-focus composition: the starting box occupies the middle ground, with its entrance on the left and its interior extending rightward; the leaf and dragonfly occupy a separate foreground area without obscuring the dog. The box has a visibly open mesh side that keeps the greyhound’s entire body readable outside and inside. Keep both animals fully within frame throughout. No pan, tilt, zoom, cuts, or reframing. Use natural daylight and a simple, stationary outdoor ground and background, with no additional animals, people, or moving background elements.\n\nPreserve the greyhound’s six physical attributes together on that same dog: (1) an elongated, slender build, (2) a deep chest, (3) a tucked waist, (4) long legs, (5) a narrow head, and (6) an unchanged short coat throughout; it must be a full-bodied greyhound, not a smaller whippet or a costumed human. Preserve the dragonfly’s elongated body, large eyes, and two pairs of outspread wings; do not substitute a damselfly with wings folded together above its body. No morphing, flickering, duplication, disappearance, or anatomical distortion. The dog’s forward motion must visibly progress without frozen frames or repeating footage, while the landed dragonfly remains absolutely still. Visual only: no audio, dialogue, captions, logos, or visible text. Maintain exactly one greyhound and exactly one dragonfly from beginning to end.\n\nImage 1 shows Full-bodied greyhound; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A3",
+        "target": ""
+      }
+    ],
+    "leftPoster": "posters/c873f8b6dd7c19b2.jpg",
+    "rightPoster": "posters/65145c0b839da674.jpg"
+  },
+  {
+    "id": "t2v_k6_r1_0044",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Coordinated workbench action during a slow leftward pan",
+    "score": "2/6 → 5/6",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/65b2aadf66e18f8c.mp4",
+    "rightVideo": "play/f4001c8b5410e53c.mp4",
+    "nativePrompt": "Exactly four workers stand shoulder to shoulder at a workbench: one wears red gloves, one blue gloves, one green gloves, and one yellow gloves. Their gloved hands rapidly push and pull the same sliding bar back and forth together throughout the shot. Initially, all four workers already grip the bar; they drive it horizontally along its sliding axis, extend their arms together through a push stroke, smoothly reverse direction, and bend their elbows together through a pull stroke. Continue these synchronized strokes rapidly and continuously through the final frame, with actual bar displacement relative to the workbench—not stationary hands miming the action. Each reversal has a brief, physically natural deceleration and acceleration, without prolonged pauses, frozen frames, or recycled footage. The bar remains supported by the workbench’s sliding guide and in continuous contact with their hands, with no floating, bending, duplication, or teleportation.\n\nArrange the workers from screen-left to screen-right in red, blue, green, and yellow gloves, preserving each worker’s glove color and position throughout. Use a tight close-up of their hands, wrists, and the bar, with their bodies extending above the crop. Keep all four workers’ gloved hands distinguishable and visible without merging fingers or changing ownership of the gloves. The workbench fills the background, with neutral task lighting that clearly reveals glove colors, grips, and bar movement; no other workers or moving background elements appear.\n\nUse one continuous shot. The camera remains at a fixed physical position and pans slowly, steadily left from the first frame to the last, rotating left without translating. Maintain tight framing on all four workers’ hands and the bar throughout this restrained pan. No tracking, dolly movement, zoom, push-in, pull-out, tilt, cuts, or abrupt reframing. Maintain consistent anatomy and stable bar geometry throughout. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly four workers throughout, with one red-gloved worker, one blue-gloved worker, one green-gloved worker, and one yellow-gloved worker.",
+    "neurcoPrompt": "Exactly four workers stand shoulder to shoulder at a workbench: the screen-left worker wears red gloves, the worker immediately to the red-gloved worker’s right wears blue gloves, the worker immediately to the blue-gloved worker’s right wears green gloves, and the screen-right worker wears yellow gloves. Their gloved hands rapidly push the single shared sliding bar horizontally along the workbench’s sliding guide in synchrony, then pull that same bar back along the guide in the opposite direction in synchrony, repeating this push-then-pull motion with all four workers maintaining their grips and applying force together throughout the shot. Initially, all four workers already grip the bar; they drive it horizontally along its sliding axis, extend their arms together through a push stroke, smoothly reverse direction, and bend their elbows together through a pull stroke. Continue these synchronized strokes rapidly and continuously through the final frame, with actual bar displacement relative to the workbench—not stationary hands miming the action. Each reversal has a brief, physically natural deceleration and acceleration, without prolonged pauses, frozen frames, or recycled footage. The bar remains supported by the workbench’s sliding guide and in continuous contact with their hands, with no floating, bending, duplication, or teleportation.\n\nArrange the workers from screen-left to screen-right in red, blue, green, and yellow gloves, preserving each worker’s glove color and position throughout. Use a tight close-up of their hands, wrists, and the bar, with their bodies extending above the crop. Keep all four workers’ gloved hands distinguishable and visible without merging fingers or changing ownership of the gloves. The workbench fills the background, with neutral task lighting that clearly reveals glove colors, grips, and bar movement; no other workers or moving background elements appear.\n\nUse one continuous shot. The camera remains at a fixed physical position and pans slowly, steadily left from the first frame to the last, rotating left without translating. Maintain tight framing on all four workers’ hands and the bar throughout this restrained pan. No tracking, dolly movement, zoom, push-in, pull-out, tilt, cuts, or abrupt reframing. Maintain consistent anatomy and stable bar geometry throughout. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Preserve exactly four workers throughout, with one red-gloved worker, one blue-gloved worker, one green-gloved worker, and one yellow-gloved worker.\n\nImage 1 shows four workers wearing red, blue, green, and yellow gloves; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A4",
+        "target": ""
+      }
+    ],
+    "leftPoster": "posters/65b2aadf66e18f8c.jpg",
+    "rightPoster": "posters/f4001c8b5410e53c.jpg"
+  },
+  {
+    "id": "r2v_k3_r0_0382",
+    "backend": "Seedance 2.5",
+    "mode": "R2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "A solemn imperial guard receives a silent command and departs.",
+    "score": "1/3 → 2/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/d54f4c94e6f72723.mp4",
+    "rightVideo": "play/7f2fbcfe80acdd1d.mp4",
+    "nativePrompt": "Exactly two human subjects appear: the woman from Image 2 and the armored man from Image 3. The man begins kneeling before her, with his fists already clasped together and his head lowered; he rises fully to his feet, then pivots clockwise through exactly 90 degrees in place to face the doorway, then walks out of the hall. Complete these actions sequentially in one continuous, photorealistic shot, without cuts or skipped stages.\n\nFaithfully reproduce the ancient hall from Image 1, preserving its architecture, window, doorway, spatial layout, and material character. Render lifelike surface textures, physically plausible window illumination, realistic armor, and natural human skin. Match each character’s recognizable face, hairstyle, clothing or armor, and body proportions to their respective reference image; do not substitute generic characters or change their identities.\n\nThe woman stands beside the window with her face turned toward it. Her expression remains stern, with a firm brow and tightly set lips. She remains completely motionless throughout: no blinking, breathing movement, head turns, gestures, or shifts in posture. Keep her original position and orientation unchanged while the man performs the entire action.\n\nInitially, the man’s knees visibly contact the floor, his clasped fists are already established, and his head is lowered. He rises through a continuous, anatomically plausible transfer of weight from his knees onto his planted feet, reaching a fully upright stance before turning. Keeping his fists clasped, he pivots clockwise as viewed from above, using small grounded foot adjustments; his body rotates exactly one quarter-turn without translating away from his standing position. Only after he faces the doorway does he begin walking. Each alternating footfall moves his body forward relative to the hall, with realistic weight transfer and floor contact—no walking in place, sliding, or teleportation. He passes through the doorway and disappears progressively behind its architectural boundary, continuing outward without returning. The final view shows the motionless woman beside the window and the man absent from the hall.\n\nUse a locked-off wide composition that establishes the woman, the kneeling man, and his unobstructed route to the doorway. No camera movement, zoom, or reframing. Keep the architecture and background entirely static. The man’s movement must progress smoothly throughout his action, with no frozen frames, loops, anatomical distortion, armor morphing, or identity changes. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or added text. Maintain exactly these two characters, with no additional people or duplicates; only the man leaves the frame as specified.",
+    "neurcoPrompt": "Exactly two human subjects appear: the woman whose face, hairstyle, clothing, and body proportions match the woman depicted in Image 2, and the armored man whose face, hairstyle, armor, and body proportions match the man depicted in Image 3, with each reference bound only to its corresponding character throughout the shot. The man begins kneeling before her, with his fists already clasped together and his head lowered; he rises fully to his feet, then pivots his entire body clockwise as viewed from above through exactly 90 degrees in place, keeping his standing location fixed and stopping after this single quarter-turn, to face the doorway, then walks out of the hall. Complete these actions sequentially in one continuous, photographically realistic shot in which the people, armor, and hall appear as real physical subjects captured by a camera, with lifelike surface detail and physically plausible light and shadows, without cuts or skipped stages.\n\nFaithfully reproduce the ancient hall from Image 1, preserving its architecture, window, doorway, spatial layout, and material character. Render lifelike surface textures, physically plausible window illumination, realistic armor, and natural human skin. Match each character’s recognizable face, hairstyle, clothing or armor, and body proportions to their respective reference image; do not substitute generic characters or change their identities.\n\nThe woman stands beside the window with her face turned toward it. Her expression stays fixed in one stern expression from the beginning to the end of the shot, with a firm brow and tightly set lips. She remains completely motionless throughout: no blinking, breathing movement, head turns, gestures, or shifts in posture. Keep her original position and orientation unchanged while the man performs the entire action.\n\nInitially, the man’s knees visibly contact the floor, his clasped fists are already established, and his head is lowered. He rises through a continuous, anatomically plausible transfer of weight from his knees onto his planted feet, reaching a fully upright stance before turning. Keeping his fists clasped, he pivots clockwise as viewed from above, using small grounded foot adjustments; his body rotates exactly one quarter-turn without translating away from his standing position. Only after he faces the doorway does he begin walking. Each alternating footfall moves his body forward relative to the hall, with his body weight transferring onto each planted foot as its sole contacts and bears against the solid floor, the supporting foot remaining stationary against the floor while the other foot lifts and advances, and neither foot penetrating the floor—no walking in place, sliding, or teleportation. He passes through the doorway and disappears progressively behind its architectural boundary, continuing outward without returning. The final view shows the motionless woman beside the window and the man absent from the hall.\n\nUse a locked-off wide-shot composition that frames both characters from head to foot together with the surrounding hall, including the window, floor, and doorway, that establishes the woman, the kneeling man, and his unobstructed route to the doorway. No camera movement, zoom, or reframing. Keep the architecture and background entirely static. The man’s movement must progress smoothly throughout his action, with no frozen frames, loops, anatomical distortion, armor morphing, or identity changes. Visual-only: no dialogue, narration, music, sound effects, captions, subtitles, logos, or added text. Maintain exactly these two characters, with no additional people or duplicates; only the man leaves the frame as specified.\n\nUse Image 4 as the visual style reference for the whole video.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "F1",
+        "target": ""
+      }
+    ],
+    "leftPoster": "posters/d54f4c94e6f72723.jpg",
+    "rightPoster": "posters/7f2fbcfe80acdd1d.jpg"
+  },
+  {
+    "id": "t2v_k3_r0_0474",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "A cat moving around a table",
+    "score": "2/3 → 3/3",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/c62c1052370d6530.mp4",
+    "rightVideo": "play/eb97305450eff687.mp4",
+    "nativePrompt": "Exactly one domestic cat starts on top of a table, hops down, runs to the front of the table and pauses there, then walks beneath the table and settles underneath it, in that exact order. Show this as one continuous, uncut shot.\n\nUse a fixed, slightly elevated three-quarter view facing the table’s front, wide enough to keep the tabletop, the cat’s landing area, the floor in front, and the space underneath visible throughout. A simple four-legged table stands on a matte floor in a plainly furnished, softly lit room. Keep the background static, with no other animals, people, or moving objects. The cat has consistent short gray fur, a feline muzzle, pointed ears, natural feline proportions, and a single tail; it is a domestic cat, not a fox or a costumed human.\n\nBeginning: the cat stands near the tabletop’s right edge. It flexes its legs, pushes off with its hind paws, and hops down to the floor beside the table. Its whole body follows a short downward arc; its front paws contact the floor before its hind paws, and its legs flex naturally to absorb the landing. The table remains stationary.\n\nTransition: after landing, the same cat runs along a short curved path from the table’s right side to the open floor directly in front of it. Show actual body displacement relative to the fixed table with coordinated paw contacts, not running in place or sliding. It decelerates and pauses in front of the table with all four paws grounded and subtle, clearly visible breathing. Do not skip this pause or have it enter underneath prematurely.\n\nResult: the cat resumes movement at a walk, turns toward the opening beneath the tabletop, and walks between the front legs without touching or passing through them. Keep its body visibly trackable through the open space. Once fully underneath, it bends its legs, lowers its chest and belly, and settles into a resting position with its paws tucked beneath its body. End with the cat resting underneath the table, still visibly breathing.\n\nPreserve continuous anatomy and natural contact with supporting surfaces, with no teleportation, morphing, frozen frames, repeated action loops, or unrelated actions. No camera movement, zoom, cuts, audio, captions, logos, or visible text. Maintain the same identity and exactly one domestic cat from beginning to end.",
+    "neurcoPrompt": "Exactly one domestic cat starts standing with all four paws on the tabletop, hops down once from the tabletop to the floor beside the table, runs from beside the table to the floor directly in front of the table and stops there for a pause, then walks from that front position into the space beneath the tabletop and settles with its entire body underneath the table, in that exact order. Show this as one continuous, uncut shot.\n\nUse a fixed, slightly elevated three-quarter view from a camera positioned above tabletop height and angled downward facing the table’s front, wide enough to keep the tabletop, the cat’s landing area, the floor in front, and the space underneath visible throughout. A simple four-legged table stands on a matte floor in a plainly furnished, softly lit room. Keep the background static, with no other animals, people, or moving objects. The cat has fur that is short, fur that is gray, a feline muzzle, pointed ears, natural feline body proportions, and exactly one tail, all belonging to the same cat; it is a domestic cat, not a fox or a costumed human.\n\nBeginning: the cat stands near the tabletop’s right edge. It flexes its legs, pushes off with its hind paws, and hops down to the floor beside the table. Its whole body follows a short downward arc; the cat’s front paws contact the floor while its hind paws are still above the floor, then its hind paws contact the floor, and its legs bend under the landing load to slow its downward motion until its body is supported on the floor. The table remains stationary.\n\nTransition: after landing, the same cat runs along a short curved path from the table’s right side to the open floor directly in front of it. Show actual body displacement relative to the fixed table with coordinated paw contacts, not running in place or sliding. It decelerates and pauses in front of the table with all four paws grounded and subtle, clearly visible breathing. Do not skip this pause or have it enter underneath prematurely.\n\nResult: the cat resumes movement at a walk, turns toward the opening beneath the tabletop, and walks between the front legs without touching or passing through them. Keep its body visibly trackable through the open space. Once fully underneath, it bends its legs, lowers its chest and belly, and settles into a resting position with its paws tucked beneath its body. End with the cat resting underneath the table, still visibly breathing.\n\nPreserve continuous anatomy and natural contact with supporting surfaces, with no teleportation, morphing, frozen frames, repeated action loops, or unrelated actions. No camera movement, zoom, cuts, audio, captions, logos, or visible text. Maintain the same identity and exactly one domestic cat from beginning to end.\n\nImage 1 shows short-haired gray domestic cat; keep its appearance exactly.",
+    "operators": [
+      {
+        "name": "参考图",
+        "type": "ref_image",
+        "control": "A3",
+        "target": ""
+      }
+    ],
+    "leftPoster": "posters/c62c1052370d6530.jpg",
+    "rightPoster": "posters/eb97305450eff687.jpg"
+  },
+  {
+    "id": "t2v_k6_r0_0700",
+    "backend": "Seedance 2.5",
+    "mode": "T2V",
+    "method": "external-pe",
+    "methodLabel": "External PE + Text+Op",
+    "topic": "Rapid three-color paint mixing",
+    "score": "4/6 → 6/6",
+    "leftLabel": "External PE",
+    "rightLabel": "External PE + NeurCo",
+    "leftVideo": "play/4f1b5ff54bb50e74.mp4",
+    "rightVideo": "play/a9b456b0e1783ef9.mp4",
+    "nativePrompt": "Exactly three cups—one red cup containing red paint, one purple cup containing purple paint, and one yellow cup containing yellow paint—rapidly pour equal amounts into exactly one mixing bowl; afterward, exactly one spoon vigorously stirs until the separate colored streaks merge into one uniform blended color. Show this as a continuous, visual-only shot from a fixed elevated three-quarter angle, with the bowl centered on a plain tabletop and all three cups clearly distinguishable around it. Use even lighting that accurately reveals the paint colors and changing mixture.\n\nBeginning: the bowl is empty, each upright cup visibly contains the same volume of its matching paint, and the spoon rests against the bowl’s inner rim without stirring. The three cups tip inward rapidly and simultaneously, directing three distinct streams into the bowl. Thick liquid paint flows continuously under gravity; the cups empty progressively as the bowl fills. Red, purple, and yellow form clearly separate streaks and ribbons in the bowl, with small natural ripples where the streams land. Keep any supporting grips outside the framing; no cups float, teleport, or intersect. Once pouring finishes, the three empty cups return upright beside the bowl.\n\nThen, and only after all three streams stop, the spoon begins fast, vigorous circular stirring. Its handle is manipulated from outside the frame, while its bowl remains immersed in the paint. Show continuous sweeping motion and physically responsive swirling: first broad separate colored streaks, then thinner marbled ribbons, then diminishing color differences as repeated spoon passes fold the paint together. The mixture gradually becomes a single uniform, muted warm brown, fully achieved only in the final frame, with the spoon still stirring. Never show a uniform mixture at the start, skip the marbled intermediate state, or substitute pouring for stirring. The action must visibly progress throughout, without frozen frames, long pauses, repeated footage, cuts, or abrupt changes in paint volume or color.\n\nKeep the camera stationary with no pan, tilt, zoom, or reframing; keep the tabletop and background still. Preserve each cup’s color and shape, the same bowl, and the same coherent spoon throughout, without duplication, morphing, or extra vessels or utensils. No dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain exactly three cups, one mixing bowl, and one spoon from beginning through end.",
+    "neurcoPrompt": "Exactly three individual cups, with no additional cups—one red cup containing red paint, one purple cup containing purple paint, and one yellow cup containing yellow paint—rapidly each pour the same volume of their matching paint from their open rims into the interior of exactly one mixing bowl; afterward, exactly one spoon vigorously stirs until the separate colored streaks merge into one uniform blended color. Show this as a continuous, visual-only shot from a fixed high three-quarter camera angle looking downward at the bowl and tabletop, showing both the bowl’s interior and its near side, with the bowl centered on a plain tabletop and all three cups clearly distinguishable around it. Use even lighting that accurately reveals the paint colors and changing mixture.\n\nBeginning: the bowl is empty, each upright cup visibly contains the same volume of its matching paint, and the spoon rests against the bowl’s inner rim without stirring. The three cups tip inward rapidly and simultaneously, directing three distinct streams into the bowl. Thick liquid paint flows in uninterrupted streams from the tilted cups’ rims downward into the bowl under gravity, spreading on contact with the bowl’s interior and the paint accumulating there; the cups empty progressively as the bowl fills. Red, purple, and yellow form clearly separate streaks and ribbons in the bowl, with small natural ripples where the streams land. Keep any supporting grips outside the framing; no cups float, teleport, or intersect. Once pouring finishes, the three empty cups return upright beside the bowl.\n\nThen, and only after all three streams stop, the spoon begins moving rapidly and continuously in a circular path through the paint inside the bowl, pushing the paint around the bowl on each pass. Its handle is manipulated from outside the frame, while its bowl remains immersed in the paint. Show continuous sweeping motion and swirling in which contact with the immersed spoon pushes adjacent paint along the spoon’s circular path, draws surrounding paint into the flow, and folds the colored streaks into one another: first the red, purple, and yellow remain visibly distinct in broad separate streaks, then those streaks stretch and fold into thinner interleaved marbled ribbons, then the color differences between the ribbons progressively diminish as repeated spoon passes fold the paint together. The mixture gradually becomes a single uniform, muted warm brown, fully achieved only in the final frame, with the spoon still stirring. Never show a uniform mixture at the start, skip the marbled intermediate state, or substitute pouring for stirring. The action must visibly progress throughout, without frozen frames, long pauses, repeated footage, cuts, or abrupt changes in paint volume or color.\n\nKeep the camera stationary with no pan, tilt, zoom, or reframing; keep the tabletop and background still. Preserve each cup’s color and shape, the same bowl, and the same coherent spoon throughout, without duplication, morphing, or extra vessels or utensils. No dialogue, narration, music, sound effects, captions, subtitles, logos, or visible text. Maintain exactly three cups, one mixing bowl, and one spoon from beginning through end.",
+    "operators": [
+      {
+        "name": "首帧",
+        "type": "first_frame",
+        "control": "P1",
+        "target": ""
+      }
+    ],
+    "leftPoster": "posters/4f1b5ff54bb50e74.jpg",
+    "rightPoster": "posters/a9b456b0e1783ef9.jpg"
+  }
+]
