@@ -40,9 +40,12 @@ Offline, probe tasks run on the frozen model and are scored into a capability ma
 
 VComBench has 380 compositional tasks across T2V, I2V, and R2V, with 1,617 scored requirements over 34 controls. **Req.** is requirement satisfaction. **All** is joint success on every requirement of a task. A video can satisfy some requirements and still fail the task.
 
-![VComBench composition. 128 text-to-video, 113 image-to-video, and 139 reference-to-video tasks, with representative controls for content, space, motion, time, camera, and appearance.](assets/vcombench.png)
-
-![Requirement satisfaction versus joint task success. Satisfying two of three requirements scores 2/3 on Req. and 0 on All.](assets/scoring.png)
+<table>
+  <tr>
+    <td width="50%"><img src="assets/vcombench.png" alt="VComBench composition: 128 text-to-video, 113 image-to-video, and 139 reference-to-video tasks, with representative controls for content, space, motion, time, camera, and appearance."></td>
+    <td width="50%"><img src="assets/scoring.png" alt="Requirement satisfaction versus joint task success. Satisfying two of three requirements scores 2/3 on Req. and 0 on All."></td>
+  </tr>
+</table>
 
 NeurCo (T) is text-only compilation. NeurCo (T+O) also uses external operators. External PE is an external prompt enhancer.
 
