@@ -18,7 +18,7 @@ To publish with GitHub Pages, set the source to the `docs` folder on the default
 python3 -m http.server 8765 --directory docs
 ```
 
-Paper, code, and the public leaderboard are not in this release yet.
+Paper and the public leaderboard are not in this release yet.
 
 ## Method
 
@@ -38,7 +38,7 @@ Offline, probe tasks run on the frozen model and are scored into a capability ma
 
 ## VComBench
 
-VComBench has 380 compositional tasks across T2V, I2V, and R2V, with 1,617 scored requirements over 34 controls. **Req.** is requirement satisfaction. **All** is joint success on every requirement of a task. A video can satisfy some requirements and still fail the task.
+VComBench has 380 compositional tasks across T2V, I2V, and R2V, with 1,617 scored requirements over 34 controls. The tasks are released at [Fortunaa/NeurCo-VComBench](https://huggingface.co/datasets/Fortunaa/NeurCo-VComBench). **Req.** is requirement satisfaction. **All** is joint success on every requirement of a task. A video can satisfy some requirements and still fail the task.
 
 <table>
   <tr>
@@ -63,8 +63,9 @@ On native inputs, text-only compilation is strongest for Seedance 2.5 (68.5→69
 
 The project page shows a small set of Native vs NeurCo clips for H3, Wan, and Seedance 2.5. Wan reference-to-video clips are labeled R2V (VACE).
 
-## Released results
+## Data
 
+- [VComBench](https://huggingface.co/datasets/Fortunaa/NeurCo-VComBench)
 - [VBench-2.0 testmini results](https://huggingface.co/datasets/Fortunaa/Neurco-Vbench2-testmini)
 - [Sci-VBench testmini results](https://huggingface.co/datasets/Fortunaa/Neurco-SciVbench-testmini)
 
