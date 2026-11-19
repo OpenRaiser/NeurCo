@@ -2,6 +2,12 @@
 
 **Neural Rendering Compiler: Generative Video Models as Programmable Renderers**
 
+[![Project Page](https://img.shields.io/badge/Project-Page-2b7fff)](https://openraiser.github.io/NeurCo/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/OpenRaiser/NeurCo)
+[![VComBench](https://img.shields.io/badge/Dataset-VComBench-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/Fortunaa/NeurCo-VComBench)
+[![VBench-2.0](https://img.shields.io/badge/Dataset-VBench--2.0-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/Fortunaa/Neurco-Vbench2-testmini)
+[![Sci-VBench](https://img.shields.io/badge/Dataset-Sci--VBench-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/Fortunaa/Neurco-SciVbench-testmini)
+
 NeurCo probes a frozen video model and turns what that model can reliably do into a capability manual. A request is written as a model-agnostic program of objects, constraints, events, and cameras, then compiled into text, external operators, or both. Requirements the model already handles stay as they are. The rest are rewritten or routed to another execution strategy.
 
 Author One\* · Author Two\* · Author Three · Author Four · Author Five
